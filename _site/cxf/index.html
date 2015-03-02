@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>Spring으로 SOAP기반 CXF 웹서비스 구축하기 – Namoosori’s home blog – One step Ahead</title>
+
+    <meta name="author" content="Namoosori’s home blog" />
+    <meta name="description" content="One step Ahead">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/theme20/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Namoosori’s home blog - One step Ahead" href="/theme20/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <!-- tag, category search -->
+    <script defer src="/js/alexpearce.js"></script>
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/theme20/" class="site-avatar"><img src="https://raw.githubusercontent.com/Wooseok7/theme20/gh-pages/Nextree%20CI_enlarge.png" /></a>
+          
+          <div class="site-info">
+            <h1 class="site-name"><a href="/theme20/">Namoosori’s home blog</a></h1>
+            <p class="site-description">One step Ahead</p>
+          </div>
+          
+          <nav>
+            <a href="/theme20/about/">About</a>
+            <a href="/theme20/categories">Categories</a>     
+            <a href="/theme20/archive/">Archive</a>
+            <a href="/theme20/tags/">Tags</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>Spring으로 SOAP기반 CXF 웹서비스 구축하기</h1>
+
+  <div class="entry">
+    <h1>Spring으로 SOAP기반 CXF 웹서비스 구축하기</h1>
+
+<p>Posted by 김 은영 in 배움터 - 열공, 일터 - 경험과 노하우 on Aug 10th, 2014  </p>
+
+<p>오늘은 스프링프레임워크에서 CXF를 이용하여 SOAP기반의 웹서비스를 만드는 과정에 대해 소개합니다. 웹서비스의 전반적인 개요는 포스팅 <a href="%E2%80%9Chttp://www.nextree.co.kr/p2010/%E2%80%9D">SOAP 기반 웹서비스 구축하기(“http://www.nextree.co.kr/p2010/”)</a> 을 참고하시면 좋습니다. 이 글은 웹서비스 구축에 초점을 맞추었습니다.</p>
+
+<p>웹서비스는 서비스를 처리하는 부분(Service Provider)과 서비스를 요청하고 처리 결과를 표현하는 부분(Service Consumer/Presenter)이 분리되어 있더라도, Web을 통해 통신하여 실행되는 시스템의 컴포넌트 묶음을 말합니다. 단순히 MVC와 같이 Model과 View, Controller를 분리한 것이 아닌, Back-end Side와 Front-end Side를 컴포넌트 뿐 아니라 개발환경까지 물리적으로 분리 된 상태에서 실행되는 시스템입니다. 몇 달 전 웹서비스 프로젝트에 참여하였을 때, 저희는 서버사이드를 개발하고 인도의 개발사에서 UI를 개발했습니다. 그렇다면 저희가 제공하는 웹서비스를 그들은 어떻게 받아서 처리할 수 있을까요? 아래 그림을 통해 WebService 원리를 살펴봅니다.</p>
+
+<p><img src="http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-01-2.jpg" alt="nextree"><br>
+<p align="center">그림1.웹서비스의 구조</p></p>
+
+<p>그림 1과 같이 Web Service Consumer는 Web Service Provider와 통신을 합니다. 이 때의 데이터는 SOAP으로 바인딩 됩니다. 핵심은 <strong>WSDL(Web Services Description Language)</strong>입니다. WSDL은 웹서비스를 제공하는 Server와 사용하는 Client을 연결해 주는 문서입니다. 시스템 요구사항대로 구현된 서비스들의 명세를 WSDL에 담아 명시해두면, 서비스를 요청하는 쪽에서 이 문서를 보고 해당 서버의 서비스는 어떤 것들이 있고, 각 서비스들의 파라미터와 리턴객체은 어떤 타입으로 주고 받는지 확인합니다. 즉,  서비스를 어떤형태로 요청하고 응답받아서 처리할 것인지는 WSDL을 통해 결정할 수 있습니다.</p>
+
+<p><img src="http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-06-1.jpg" alt="nextree"><br>
+<p align="center">그림2.웹서비스 시스템 구성</p></p>
+
+<p>웹서비스를 구현하기 위해서는 그림1과 같은 논리적인 구조 뿐 아니라, 어떤 기술을 사용할지에 대한 고민도 필요합니다. 웹서비스 프레임워크와 OXM을 어떻게 결정하느냐에 따라 성능과 구현 효율이 현저하게 달라질 수 있기 때문입니다.<br>
+오늘 소개할 예제는 그림2와 같은 웹서비스 시스템 구성을 갖추었습니다. Spring을 사용하였지만 Spring-WS 대신 CXF 프레임워크를 사용하였고, Spring은 POJO Container로 적용하여 빈 설정의 효율을 높였습니다. CXF는 웹서비스를 제공해주는 웹서비스 프레임워크입니다. 대표적인 웹서비스 프레임워크로는 CXF, AXIS, Spring-WS가 있습니다. 세 프레임워크의 자세한 차이는 <a href="http://architects.dzone.com/articles/apache-cxf-vs-apache-axis-vs">http://architects.dzone.com/articles/apache-cxf-vs-apache-axis-vs</a>를 참고하시기 바랍니다.</p>
+
+<p><img src="http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-07-1.jpg" alt="nextree"><br>
+<p align="center">그림3.OXM의 원리</p></p>
+
+<p><br>웹서비스는 Consumer가 WSDL에서 검색한 Service에 요청XML을 보내면, Provider가 이 문서를 객체로 변환해서 처리를 한 후 다시 Client에게 응답XML을 보내는 과정을 가집니다. 때문에 서비스요청을 표준문서인 XML로 Binding(Marshaling 혹은 Serialize)하고, 그 문서를 다시 시스템에서 처리 가능한 오브젝트로 Binding(Demarshaling 혹은 Deserialize)하는 과정이 반드시 필요합니다. 따라서 OXM은 웹서비스에서 핵심적인 역할을 담당하고 있습니다.</p>
+
+<p>OXM은 Jibx, Castor, JAXB 등 다양한 종류가 있는데, 이 중에서도 JAXB를 선택한 이유는 웹서비스 플랫폼인 CXF에 가장 적용하기 편리한 OXM이기 때문입니다. 뿐만 아니라 JAXB는 Java Architecture for XML Binding의 약자로서 JAVA구조에 가장 적합하기 때문에 JAVA로 구현하는 웹서비스에서 적용하기 편리한 기술입니다.</p>
+
+<p>웹서비스 시스템을 구성할 기술을 선택하였으니, 이제 웹서비스 구축 방법에 대해 알아봅니다.</p>
+
+<h3>1. 웹 프로젝트를 생성</h3>
+
+<p>: 저는 Spring Web Maven Project를 생성하였습니다. Eclipse에 STS plugin을 설치하면 쉽게 생성할 수 있습니다.<br></p>
+
+<p><img src="http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-02.jpg" alt="nextree"><br>
+<p align="center">그림4. Spring Web Maven Project 생성</p></p>
+
+<h3>2. CXF Dependency 추가</h3>
+
+<p>:  pom.xml 에 CXF관련 dependency를 추가합니다. dependencies 탭에서 Add버튼을 눌러 검색하여 추가하거나, 아래 소스코드를 복사하여 붙인 후 Maven Update를 하면 자동으로 관련 라이브러리들이 다운로드 됩니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    &lt;!-- CXF --&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.apache.cxf&lt;/groupId&gt;
+        &lt;artifactId&gt;cxf-rt-frontend-jaxws&lt;/artifactId&gt;
+        &lt;version&gt;2.7.11&lt;/version&gt;
+    &lt;/dependency&gt;
+    &lt;dependency&gt;
+        &lt;groupId&gt;org.apache.cxf&lt;/groupId&gt;
+        &lt;artifactId&gt;cxf-rt-transports-http&lt;/artifactId&gt;
+        &lt;version&gt;2.7.11&lt;/version&gt;
+    &lt;/dependency&gt;
+</code></pre></div>
+<h3>3. Sevlet 설정</h3>
+
+<p>: web.xml 서버로 들어오는 요청을 CXF-Servlet으로 연결하는 설정을 추가해야 합니다. 기본으로 Dispatcher-Servlet이 추가되어 있다면 이를 삭제하거나, CXF-Servlet을 url pattern으로 구분하여 추가해서 해당 url일 경우에만 CXF로 연결되도록 설정할 수 있습니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    &lt;servlet&gt;
+      &lt;servlet-name&gt;cxf&lt;/servlet-name&gt;
+      &lt;servlet-class&gt;org.apache.cxf.transport.servlet.CXFServlet&lt;/servlet-class&gt;
+      &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+    &lt;/servlet&gt;
+    &lt;servlet-mapping&gt;
+      &lt;servlet-name&gt;cxf&lt;/servlet-name&gt;
+      &lt;url-pattern&gt;/*&lt;/url-pattern&gt;
+    &lt;/servlet-mapping&gt;
+</code></pre></div>
+<h3>4. WebService Annotation을 활용하여 서비스 구현</h3>
+
+<p>: 웹서비스 구현체에 @WebService Annotation을 붙이고 그 안에 서비스 명, 네임스페이스, Port 명 등 여러 정보들을 원하는대로 설정할 수 있으며, 설정하지 않아도 기본값으로 자동으로 생성되므로 편리합니다. 또한 @WebParam을 서비스 파라미터 타입 앞에 쓰면 XML에 원하는 이름으로 표현할 수 있습니다. 만약 @WebParam을 설정하지 않으면 arg0, arg1… 과 같은 형태로 생성되기 때문에 요청XML을 작성하는데 어려움이 생깁니다. 따라서 정확한 명시를 위해 @WebParam 이름은 반드시 설정하도록 합니다. 아래와 같이 적절한 Annotation을 사용하여 서비스 인터페이스와 구현체 클래스를 생성합니다. 웹서비스 어노테이션에 경고가 없어지지 않는다면, dependency에 javaee-web-api를 설정하여 내려받으면 더욱 편하게 작업하실 수 있습니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    @WebService(endpointInterface = &quot;ws.HelloWs&quot;, serviceName = &quot;HelloWs&quot;, portName=&quot;HelloPort&quot;, targetNamespace=&quot;nextree.co.kr&quot;)
+    public class HelloWsLogic implements HelloWs {
+
+        public String helloWebService(@WebParam(name=&quot;user&quot;) User user) {
+            return user.getName() + &quot;(&quot; + user.getEmail() +&quot;)님 안녕하세요&quot;;
+        }
+    }
+</code></pre></div>
+<h3>5. WebService Endpoint Bean 등록</h3>
+
+<p>: applicationContext.xml 또는 본인이 설정한 Spring Bean Configuration File에 WebService의 Endpoint로 사용할 서비스구현체를 빈으로 등록합니다. 해당 구현체의 위치를 등록하고, 해당 서비스에 접근할 수 있는 url을 address속성에 지정합니다.  JAXWS SOAP 바인딩 설정도 함께 잡아줍니다. 그리고 아래 소스코드처럼 CXF 파일을 import하여 CXF관련 설정을 추가합니다.<br>
+여기서 주의할 점은 지정된 설정파일에 추가해야된다는 점입니다. web.xml에 Application Context File에 대한 어떤 설정도 없다면 기본적으로 applicationContext.xml 파일을 탐색하여 참조하기 때문에, 추가한 파일이 web.xml에 제대로 설정되어 있는지 확인하기시 바랍니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">    &lt;import resource=&quot;classpath:META-INF/cxf/cxf-servlet.xml&quot; /&gt;
+    &lt;import resource=&quot;classpath:META-INF/cxf/cxf.xml&quot; /&gt;
+    &lt;import resource=&quot;classpath:META-INF/cxf/cxf-extension-soap.xml&quot; /&gt;
+
+    &lt;jaxws:endpoint id=&quot;helloWs&quot; implementor=&quot;ws.logic.HelloWsLogic&quot; address=&quot;/helloWs&quot;&gt;
+        &lt;jaxws:binding&gt;
+            &lt;soap:soapBinding style=&quot;document&quot; use=&quot;literal&quot; version=&quot;1.1&quot; /&gt;
+        &lt;/jaxws:binding&gt;
+    &lt;/jaxws:endpoint&gt;
+</code></pre></div>
+<h3>6. WSDL 확인</h3>
+
+<p>: 서버를 띄우고, CXF를 통해 자동으로 생성된 wsdl을 확인합니다. Endpoint Bean의 address를 url뒤에 붙이고 “?wsdl”을 덧붙여 익스플로러 URL창에 입력합니다.  그럼 해당 주소에 WSDL이 생성된 것을 확인할 수 있습니다.<br></p>
+
+<p><img src="http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-03.jpg" alt="nextree"><br>
+<p align="center">그림5. 생성된 wsdl 확인</p></p>
+
+<h3>7. SoapUI로 XML 확인</h3>
+
+<p>: WebService Publisher는 UI가 없기 때문에 명확한 테스트를 하기 어렵습니다. 물론 개발자가 단위테스트는 진행할 수 있지만, 팀원들이나 현업과 테스트를 공유하기 위해서 Soap UI 웹서비스 테스트 프로그램을 사용하면 WebService Publisher가 제공하는 XML과 입력에 따른 결과도 확인 할 수 있어서 편리합니다. SoapUI는 무료버전과 유료버전을 나누어 배포하기 때문에 무료로도 간편하게 설치할 수 있습니다.(Soap UI 다운로드 URL: <a href="http://sourceforge.net/projects/soapui/files/">http://sourceforge.net/projects/soapui/files/</a>)<br></p>
+
+<p><img src="http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-05.jpg" alt="nextree"><br>
+<p align="center">그림6. SoapUI 프로젝트 생성</p></p>
+
+<p><br>SoapUI는 wsdl 주소만 입력하여 편리하게 프로젝트를 생성할 수 있습니다. 새로운 프로젝트가 생성되면 메소드별로 테스트 요청파일이 자동 생성됩니다.<br></p>
+
+<p><img src="http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-04.jpg" alt="nextree"><br>
+<p align="center">그림7. Soap UI 테스트 화면 구성</p></p>
+
+<p><br>요청할 서비스를 선택하고 XML에 “?”로 명시된 부분에 요청할 값을 입력합니다. 그 후 좌측 상단에 Submit버튼을 클릭하면 응답 XML이 출력됩니다. 또한 응답시간까지 확인할 수 있기 때문에 성능검증에도 효율적인 툴입니다.</p>
+
+<p>여기까지 WebService Publisher 구현하는 방법에 대해 알아봤습니다. 프레임워크와 라이브러리를 활용하여 쉽게 구현할 수 있습니다.<br>
+Spring Framework는 DI/IOC 기능을 통해 빈 설정 파일에 웹서비스 Endpoint만 정의해주면 구현체에 웹서비스 설정을 주입해주기 때문에, WebService 구현이 간결해지도록 합니다. 또한 CXF와 같은 WebService Framework는 편리한 라이브러리를 제공하고 wsdl를 자동 생성합니다. JAXB는 자바의 객체를 XML로 매핑하여 Client에게 전송해주고, Client가 보낸 요청 XML을 다시 자바 객체로 매핑해줍니다. 이처럼 웹서비스는 직접 구현해보면 실행원리를 쉽게 이해할 수 있습니다.</p>
+
+<p>프로젝트에 참여하면 시스템의 설정보다는 비즈니스 로직을 구현하는 시간이 많습니다. 따라서 자신이 참여한 프로젝트라도 시스템의 구성을 정확히 모르는 경우도 발생합니다. 저도 웹서비스 프로젝트에 참여했었지만, 이렇게 다시 되돌아보니 배운 점들이 많습니다. 원리와 구성을 알면 사용법은 자연스럽게 익힐 수 있다는 것을 깨달았습니다.</p>
+
+<p>이 글이 웹서비스를 공부하시는 분들께 작은 도움이 되기를 바랍니다. 끝까지 읽어주셔서 감사합니다.</p>
+
+<hr>
+
+<p>-참고 문서 <br>
+CXF : 스프링 사용 (<a href="http://cxf.apache.org/docs/writing-a-service-with-spring.html">http://cxf.apache.org/docs/writing-a-service-with-spring.html</a>)<br><br>
+CXF : JAXB 데이터바인딩 설정 (<a href="http://cxf.apache.org/docs/jaxb.html">http://cxf.apache.org/docs/jaxb.html</a>)<br><br>
+JAXB설정 (<a href="http://confluence.highsource.org/display/HJ3/Apache+CXF+Tutorial+-+Building+JAX-WS,+JAXB+and+JPA-based+web+service+with+Apache+CXF,+Spring+and+Hyperjaxb3">http://confluence.highsource.org/display/HJ3/Apache+CXF+Tutorial+-+Building+JAX-WS,+JAXB+and+JPA-based+web+service+with+Apache+CXF,+Spring+and+Hyperjaxb3</a>)<br><br>
+Spring으로 Soap WebService구현하기 (<a href="http://www.madbit.org/blog/programming/447/soap-web-services-with-spring/">http://www.madbit.org/blog/programming/447/soap-web-services-with-spring/</a>)<br><br>
+SoapUI (<a href="http://www.soapui.org/">http://www.soapui.org/</a>)<br><br>
+Spring-WS (<a href="http://projects.spring.io/spring-ws/">http://projects.spring.io/spring-ws/</a>)<br><br>
+CXF vs AXIS vs Spring-WS (<a href="http://architects.dzone.com/articles/apache-cxf-vs-apache-axis-vs">http://architects.dzone.com/articles/apache-cxf-vs-apache-axis-vs</a>)<br><br>
+CXF 샘플 코드 (<a href="https://github.com/kronleuchter85/cxf-samples/blob/master/java_first_spring_support/pom.xml">https://github.com/kronleuchter85/cxf-samples/blob/master/java_first_spring_support/pom.xml</a>)</p>
+
+  </div>
+
+  <div class="date">
+    Written on August 10, 2014
+  </div>
+  
+  <br>
+
+  <div>
+    <ul class="tags post-tags cf">
+      <li>Tagged:</li>
+      
+      <li><a href="/search/?tags=spring soap cxf">spring soap cxf</a></li>
+      
+    </ul>
+  </div>
+  <br>
+
+  
+</article>
+
+<!-- responsive video js -->
+<script src="/js/fluidvids.js"></script>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <p>Nextree Consulting CO., LTD</p>
+                    
+          
+          
+          
+          <a href="http://github.com/wooseok7/theme20"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.336871032,30 C0.336871032,13.4314567 13.5672313,0 29.8877097,0 C46.208188,0 59.4385483,13.4314567 59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C13.5672313,60 0.336871032,46.5685433 0.336871032,30 Z M0.336871032,30" id="Github" fill="#333333" sketch:type="MSShapeGroup"></path>
+    <path d="M18.2184245,31.9355566 C19.6068506,34.4507902 22.2845295,36.0156764 26.8007287,36.4485173 C26.1561023,36.9365335 25.3817877,37.8630984 25.2749857,38.9342607 C24.4644348,39.4574749 22.8347506,39.62966 21.5674303,39.2310659 C19.7918469,38.6717023 19.1119377,35.1642642 16.4533306,35.6636959 C15.8773626,35.772144 15.9917933,36.1507609 16.489567,36.4722998 C17.3001179,36.9955141 18.0629894,37.6500075 18.6513541,39.04366 C19.1033554,40.113871 20.0531304,42.0259813 23.0569369,42.0259813 C24.2489236,42.0259813 25.0842679,41.8832865 25.0842679,41.8832865 C25.0842679,41.8832865 25.107154,44.6144649 25.107154,45.6761142 C25.107154,46.9004355 23.4507693,47.2457569 23.4507693,47.8346108 C23.4507693,48.067679 23.9990832,48.0895588 24.4396415,48.0895588 C25.3102685,48.0895588 27.1220883,47.3646693 27.1220883,46.0918317 C27.1220883,45.0806012 27.1382993,41.6806599 27.1382993,41.0860982 C27.1382993,39.785673 27.8372803,39.3737607 27.8372803,39.3737607 C27.8372803,39.3737607 27.924057,46.3153869 27.6704022,47.2457569 C27.3728823,48.3397504 26.8360115,48.1846887 26.8360115,48.6727049 C26.8360115,49.3985458 29.0168704,48.8505978 29.7396911,47.2571725 C30.2984945,46.0166791 30.0543756,39.2072834 30.0543756,39.2072834 L30.650369,39.1949165 C30.650369,39.1949165 30.6837446,42.3123222 30.6637192,43.7373675 C30.6427402,45.2128317 30.5426134,47.0792797 31.4208692,47.9592309 C31.9977907,48.5376205 33.868733,49.5526562 33.868733,48.62514 C33.868733,48.0857536 32.8436245,47.6424485 32.8436245,46.1831564 L32.8436245,39.4688905 C33.6618042,39.4688905 33.5387911,41.6768547 33.5387911,41.6768547 L33.5988673,45.7788544 C33.5988673,45.7788544 33.4186389,47.2733446 35.2190156,47.8992991 C35.8541061,48.1209517 37.2139245,48.1808835 37.277815,47.8089257 C37.3417055,47.4360167 35.6405021,46.8814096 35.6252446,45.7236791 C35.6157088,45.0178155 35.6567131,44.6059032 35.6567131,41.5379651 C35.6567131,38.470027 35.2438089,37.336079 33.8048426,36.4323453 C38.2457082,35.9766732 40.9939527,34.880682 42.3337458,31.9450695 C42.4383619,31.9484966 42.8791491,30.5737742 42.8219835,30.5742482 C43.1223642,29.4659853 43.2844744,28.1550957 43.3168964,26.6025764 C43.3092677,22.3930799 41.2895654,20.9042975 40.9014546,20.205093 C41.4736082,17.0182425 40.8060956,15.5675121 40.4961791,15.0699829 C39.3518719,14.6637784 36.5149435,16.1145088 34.9653608,17.1371548 C32.438349,16.3998984 27.0982486,16.4712458 25.0957109,17.3274146 C21.4005522,14.6875608 19.445694,15.0918628 19.445694,15.0918628 C19.445694,15.0918628 18.1821881,17.351197 19.1119377,20.6569598 C17.8961113,22.2028201 16.9902014,23.2968136 16.9902014,26.1963718 C16.9902014,27.8297516 17.1828264,29.2918976 17.6176632,30.5685404 C17.5643577,30.5684093 18.2008493,31.9359777 18.2184245,31.9355566 Z M18.2184245,31.9355566" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C23.8348308,60 18.2069954,58.1525134 13.5216148,54.9827754 L47.3818361,5.81941103 C54.6937341,11.2806503 59.4385483,20.0777973 59.4385483,30 Z M59.4385483,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          
+          
+          
+          
+          
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

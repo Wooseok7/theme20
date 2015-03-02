@@ -1,10 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <description></description>
-    <link>http://wooseok7.github.io/theme18</link>
-    <atom:link href="http://wooseok7.github.io/theme18/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Namoosori’s home blog</title>
+    <description>One step Ahead</description>
+    <link>http://wooseok7.github.io/</link>
+    <atom:link href="http://wooseok7.github.io//feed.xml" rel="self" type="application/rss+xml" />
+    
+      <item>
+        <title>“테스트  포스팅&quot;</title>
+        <description>&lt;h2&gt;제목&lt;/h2&gt;
+
+&lt;p&gt;강조를 하고 싶은데 한글은 &lt;strong&gt;강조가 안되지만&lt;/strong&gt; 그래서 &lt;strong&gt;구글 폰트&lt;/strong&gt;를 쓰면 해결이 된다 &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;목록도 되고&lt;/li&gt;
+&lt;li&gt;이용하기 매우 용이함&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;&lt;code&gt;음영 처리도 잘 됨&lt;/code&gt;&lt;/em&gt;&lt;br&gt;&lt;br&gt;
+&lt;code&gt;javascript:void(prompt(&amp;quot;&amp;quot;,&amp;quot;[&amp;quot;+document.title+&amp;quot;](&amp;quot;+location.href+&amp;quot;)&amp;quot;));&lt;/code&gt;   &lt;/p&gt;
+
+&lt;h1&gt;맨유&lt;/h1&gt;
+
+&lt;h2&gt;SF Giants&lt;/h2&gt;
+
+&lt;h3&gt;Dallas Cowboys&lt;/h3&gt;
+
+&lt;table&gt;&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;구분&lt;/th&gt;
+&lt;th&gt;순위&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;호주&lt;/td&gt;
+&lt;td&gt;1등&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;대한민국&lt;/td&gt;
+&lt;td&gt;2등&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;UAE&lt;/td&gt;
+&lt;td&gt;3등&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[x] sent mail&lt;/li&gt;
+&lt;li&gt;[ ] mail bo&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;threading&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downloadWallpaper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\r&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Downloading Image&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_alive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Image of the day downloaded.&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/02/%EA%B7%B8%EB%A6%BC1-UML-%EC%A2%85%EB%A5%98.png&quot; alt=&quot;&quot; title=&quot;&amp;quot; &amp;quot;width:200px; height:100px; float:&quot;&gt;  &lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Jan 2015 00:00:00 +0900</pubDate>
+        <link>http://wooseok7.github.io//%20Haroopad%20copy/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//%20Haroopad%20copy/</guid>
+      </item>
     
       <item>
         <title>Embed YouTube video responsively test</title>
@@ -13,21 +77,1397 @@
 &lt;p&gt;반응형으로 영상이 잘 삽입되는지 확인하는 글입니다. 창의 크기를 마음껏 늘였다가 줄여도 영상이 잘 보여야 합니다. 만약 영상의 일부분이 잘리면 실패입니다.&lt;/p&gt;
 </description>
         <pubDate>Wed, 24 Dec 2014 00:00:00 +0900</pubDate>
-        <link>http://wooseok7.github.io/theme18/embed-video-responsively/</link>
-        <guid isPermaLink="true">http://wooseok7.github.io/theme18/embed-video-responsively/</guid>
+        <link>http://wooseok7.github.io//embed-video-responsively/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//embed-video-responsively/</guid>
       </item>
     
       <item>
-        <title>You&#39;re up and running!</title>
-        <description>&lt;p&gt;Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below &lt;img class=&#39;emoji&#39; title=&#39;:point_down:&#39; alt=&#39;:point_down:&#39; src=&#39;https://assets.github.com/images/icons/emoji/unicode/1f447.png&#39; height=&#39;20&#39; width=&#39;20&#39; align=&#39;absmiddle&#39; /&gt;).&lt;/p&gt;
+        <title>“알고보면 쉬운 웹서비스”</title>
+        <description>&lt;p&gt;웹 서비스를 적용한 애플리케이션을 구축하는 것은 쉽지 않습니다. 그러나 웹서비스의 개념과 구성을 큰 그림으로 이해한다면, 웹서비스를 구축하는 과정이 다르게 느껴질 수 있습니다. 오늘은 그동안 웹서비스를 공부하면서 개운치 않았던 부분들을 긁어드리려 합니다. 알고보면 쉬운 웹서비스에 대해 함께 살펴봅니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/theme18/images/config.png&quot; alt=&quot;_config.yml&quot;&gt;&lt;/p&gt;
+&lt;h2&gt;왜 웹 서비스를 선택할까요?&lt;/h2&gt;
 
-&lt;p&gt;The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the &lt;a href=&quot;https://github.com/barryclark/jekyll-now&quot;&gt;Jekyll Now repository&lt;/a&gt; on GitHub.&lt;/p&gt;
+&lt;p&gt;먼저 왜 웹서비스를 사용하는지에 대한 궁금증부터 해소해볼까요. 우리가 웹서비스를 사용하는 목적 중 핵심은 바로 &lt;strong&gt;플랫폼 중립(neutrality)&lt;/strong&gt;입니다. 하나의 서비스를 제공하면, 다양한 플랫폼의 클라이언트가 서비스를 받아서 사용할 수 있도록 위함입니다. 외부 애플리케이션의 기능을 연결하기 위해서는 여러 기술적 제약이 따르기 마련입니다.  하지만 현재, 많은 애플리케이션은 PC 뿐 아니라 모바일기기와 태블릿 PC 등 다양한 기기가 사용 가능합니다. 하나의 기능을 각 플랫폼에 맞게 붙이는 것은 아주 비효율적이기 때문에, 플랫폼에 상관없이 기능을 제공하고 사용할 수 있는 기술이 필요했습니다. 이러한 목적을 가지고 애플리케이션을 서비스로 제공하자며 등장한 아키텍쳐가 SOA(Service Oriented Archetecture)이며, 이를 실현시키는 방법이 바로 웹서비스인 것입니다.&lt;/p&gt;
+
+&lt;p&gt;하지만 웹서비스를 이해함에 있어서, 플랫폼 중립만큼 중요한 것이 &lt;strong&gt;독립성&lt;/strong&gt;입니다. 플랫폼 중립을 이루겠다는 것은 서비스의 기술 셋을 알지 못해도 클라이언트는 서비스를 사용할 수 있도록 해주겠다는 의미가 담겨있습니다. 클라이언트가 플랫폼에 관한 결합도를 제거하여 재사용성을 크게 높일 수는 있었지만, 효율적인 상호작용을 위해서는 플랫폼 이외의 발생하는 결합도를 고려해야 합니다. 즉 기술셋 뿐 아니라 서비스를 사용하기 위해서 알고 있어야 하는 것들을 최소화시키는 것이 좋습니다. 그래야만 클라이언트와 서버간의 느슨한 결합을 이룰 수 있고 서버와 클라이언트가 각각 독립적인 진화를 지속할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-03.jpg&quot; alt=&quot;pic1&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;그림1. 서비스 진화에 의존하는 클라이언트의 진화&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;예를 들어, 웹서비스 소유자가 서비스의 데이터 타입을 하나 변경했다고 가정합니다. 클라이언트는 변경된 데이터타입을 적용시키기 위해서 클라이언트 쪽의 로직을 수정해야만 합니다.  클라이언트는 단순히 UI를 표현하는 애플리케이션일 수도 있고, 또 다른 기능을 연결하는 애플리케이션일 수도 있습니다. 클라이언트 쪽에서도 충분히 기능구현에 대한 복잡함이 존재하고 있습니다. 그런데 서비스의 진화에 영향을 받게 되면 그림1과 같이 클라이언트는 서비스보다도 무수히 많은 변화를 적용해야만 합니다. 즉, 좋은 웹서비스란 기존 클라이언트의 중단없이 서비스를 진화시킬 수 있어야 합니다. 이렇게 웹서비스는 독립성을 강조하고 있습니다. 때문에 제대로 웹서비스를 설계한다면 서버와 클라이언트가 독립적으로 진화할 수 있기 때문에, 유지보수 및 재사용성이 큰 이점이 됩니다.&lt;/p&gt;
+
+&lt;h2&gt;웹서비스는 어떻게 연결될까요?&lt;br /&gt;&lt;br /&gt;&lt;/h2&gt;
+
+&lt;p&gt;이번엔 비즈니스 로직의 흐름에서 웹서비스가 어떻게 자리잡고 있는지 알아봅니다. 웹서비스의 서비스와 클라이언트는 어떠한 레이어로 제한되어 있지 않고 기능을 제공하고 받는 역할에 따라 구분합니다. 반드시 서비스 프로바이더는 비즈니스로직의 구현체가 있고 클라이언트는 UI구현만 있는 것은 아닙니다. 하나의 기능을 처리하기 위해서 여러 웹서비스 호출이 일어날 수 있고, 클라이언트는 또다른 웹서비스를 제공하는 프로바이더가 될 수 있습니다. 그래서 웹서비스는 어딘가 위치하고 있는 비즈니스 로직의 흐름의 한 영역이라고 말합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-00-1.jpg&quot; alt=&quot;pic2&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림2. 비즈니스로직 흐름에서 연결되는 웹서비스의 구조&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;위 그림2와 같이 웹서비스는 비즈니스로직과 비즈니스로직을 연결합니다.  먼저 서비스 소유자는 제공하려는 비즈니스 로직을 구현합니다. 이렇게 바로 제공할 수도 있지만, 웹서비스로 제공하기 위해서는 인터페이스에 제공하려는 서비스를 나열합니다. 그럼 서비스를 클라이언트들이 사용할 수 있도록 특정 위치에 제공해야 합니다.  웹서비스의 특징 중 하나는 &lt;strong&gt;서비스가 네트워크상의 공간에 위치&lt;/strong&gt;하고 있어야 한다는 것입니다. 그래서 웹서비스는 서비스를 설명하는 언어인 &lt;strong&gt;WSDL&lt;/strong&gt;을 사용합니다. WSDL을 통해 서비스를 구성하는 오퍼레이션과 요청/응답 메시지 구조, 데이터 타입 등을 인지할 수 있습니다. 때문에 WSDL이 어디에 있는지만 안다면 바로 적용해서 서비스를 사용할 수 있기 때문에, 적용이 아주 편리합니다.&lt;/p&gt;
+
+&lt;p&gt;그럼 WSDL은 어디에 위치하고 있을까요? 흔히 WSDL이 위치하는 곳을 UDDI(Universal Description Discovery &amp;amp; Integragion)라고 설명하는 경우가 많습니다. 하지만 WSDL은 UDDI에 있을 수도 있고 혹은 없을 수도 있습니다. UDDI는 웹서비스 공개저장소라고 생각하시면 이해가 쉽습니다. WSDL을 찾을 수 있는 마켓이라고 보시면 됩니다. 클라이언트가 UDDI에서 WSDL을 Find해서 호출한다는 문구를 많이 보셨을 겁니다. UDDI는 여러 WSDL을 가지고 있는 마켓이기 때문에 이 곳에서 원하는 WSDL을 이름별, 카테고리별로 검색하고 사용하는 공간입니다. 원하는 서비스를 찾아서 적용한다는 의미가 바로 이것입니다. 하지만, UDDI가 아니더라도 네트워크상으로 접근이 가능한 곳에 위치시킨다면 웹서비스는 성립됩니다. 따라서 반드시 WSDL이 UDDI에 존재하는 것은 아닙니다.&lt;br&gt;
+실무에서는 주로 서비스 개발사와 클라이언트 개발사 사이의 협약을 통해 WSDL의 위치를 공개합니다. WSDL은 단순히 서비스에 관련한 정보를 가지고 있기 때문에, 프로젝트 초기에 웹서비스를 제공하는 쪽과 받는 쪽의 협약이 필요합니다. 이러한 과정을 &lt;strong&gt;서비스 협약&lt;/strong&gt;이라고 합니다. 서비스 협약을 통해서 웹서비스의 위치, 성능, 품질 등에 관하여 논의합니다. 하지만 서비스 협약에서는 서비스를 호출할 때 어떻게 보내야하고 어떤 형태로 응답받는지에 대한 세부내용은 논의하지 않습니다. 이 것은 WSDL을 통해 유추할 수 있기 때문입니다. 그렇다면 실제 프로젝트에서 WSDL만 가지고 어떻게 웹서비스를 연결할 수 있는지 알아봅니다.&lt;/p&gt;
+
+&lt;h2&gt;우리는 어떻게 웹서비스를 호출할 수 있을까요?&lt;br /&gt;&lt;br /&gt;&lt;/h2&gt;
+
+&lt;p&gt;앞에서 웹서비스는 WSDL로부터 서비스에 요청하고 응답받는 구조를 유추할 수 있다고 했습니다. 그렇다면 실무에서 클라이언트를 개발할 때 WSDL을 어떻게 적용하는지 알아봅니다.&lt;/p&gt;
+
+&lt;p&gt;클라이언트가 서비스 프로바이더의 서비스를 연결하기 위해서는 어떤 형태로 웹서비스를 보내야하는지 어떤 형태의 응답이 오는지 등을 알고 있어야 합니다. 하지만 개발자가 직접 이것을 인지하고 개발하는것은 어려움이 있을 뿐아니라, 독립적인 웹서비스의 구현을 방해하게 됩니다. 예를 들어, 클라이언트의 핵심로직에 온통 웹서비스를 부르는 통신관련 로직이 섞여 있다면, 서비스의 변경이 곧 클라이언트의 변경으로 직접 연결됩니다. 좋은 클라이언트는 서비스에 대한 의존도가 낮기 때문에 클라이언트의 핵심로직이 서비스의 변경으로 인해 영향을 받는 일을 최소화해야 합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-02.jpg&quot; alt=&quot;pic3&quot;&gt;&lt;br&gt;
+&lt;div style=&quot;text-align:center&quot;&gt;그림 3. 프록시를 이용한 웹서비스 설계&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이러한 독립적인 클라이언트 구현을 위해 가장 보편적으로 사용되는 패턴이 &lt;strong&gt;프록시(Proxy) 패턴&lt;/strong&gt;입니다. 프록시는 웹서비스 통신을 위한 클래스 혹은 라이브러리의 집합입니다. 프록시패턴을 적용하여 클라이언트의 비즈니스로직과 통신관련로직을 분리합니다. 프록시는 서비스의 오퍼레이션의 in/out 구성 및 데이터타입, 요청/응답 메시지의 구조 등으로 구성됩니다. 따라서 클라이언트 로직에서 서비스를 호출할 때는 이 프록시만 호출하고, 그 후의 통신을 모두 이 프록시에게 위임합니다.&lt;/p&gt;
+
+&lt;p&gt;프록시를 개발자가 직접 개발한다면 이러한 독립이 의미가 없겠지요. 하지만 프록시는 wsdl을 통해 생성할 수 있습니다. 실제로 java에서는 jdk 1.6부터 제공하는 wsimport이나, Maven plugin을 통해 WSDL 위치만 입력하면 손쉽게 프록시 파일 묶음을 얻을 수 있습니다. 때문에 우리는 프록시를 직접 구현할 필요가 없고 핵심 비즈니스 로직에 집중할 수 있습니다. 뿐만 아니라 서비스에 변화가 생기더라도 프록시만 변경하면 되기 때문에 비즈니스 로직에는 웹서비스 기술이 침투하지 않습니다. WSDL은 웹 서비스의 오퍼레이션과 메시지를 표현하고, 이 문서를 이용하여 프록시를 생성하며, 프록시를 통해 원하는 서비스를 호출할 수 있는 것입니다.&lt;/p&gt;
+
+&lt;p&gt;막연하기만 했던 WSDL과 서비스의 관계가 프록시를 통해 명확히 이해할 수 있습니다. 그림 3과 같이 웹서비스 소유자는 구현한 서비스 메소드와 메시지를 서비스 설명자인 WSDL로 제공하고, 클라이언트는 WSDL로 부터 구현된 클래스들을 사용하여 웹서비스와 실질적인 연결을 이룹니다.&lt;/p&gt;
+
+&lt;p&gt;하지만 Proxy 패턴은 통신모듈이 캡슐화되어 있기 때문에 개발자가 통신오류에 관한 대비를 놓치기 쉽다는 단점이 있습니다. 따라서 웹서비스 통신에 관한 예외처리를 정확히 해주어야 합니다. 또한 그림 3과 같이 서비스 프록시는 서비스와의 결합을 풀어주는 대신 서비스 설명자와 강하게 결합하고 있습니다. 그렇기 때문에 서비스 설명자가 변하면 서비스 프록시를 다시 생성해서 연결해야 된다는 번거로움이 있습니다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;웹서비스 요청/응답메시지는 어떤 형태일까요?&lt;br /&gt;&lt;br /&gt;&lt;/h2&gt;
+
+&lt;p&gt;웹서비스는 표준 통신규약으로 SOAP(Simple Object Access Protocol)을 사용합니다. 객체를 접근을 쉽게 하기 위해서 사용하는 것이 SOAP인데 공부해보신 분들은 아시겠지만 의미는 Simple로 시작하는데 절대 간단하지 않습니다. 그러나 SOAP메시지만 보는 것을 넘어서, 웹서비스의 전체적인 구성 속에서 SOAP 의 역할을 이해하면 이 Simple의 의미를 알 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-04-1.jpg&quot; alt=&quot;pic4&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림4. WebService의 Data 변환 과정&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;SOAP의 이해를 돕기 위해서 위 그림4를 살펴봅니다. 그림과 같이 SOAP은 내가 보내고자 하는 메시지를 포장하는 포장지라고 보시면 됩니다. 그래서 SOAP을 표준포장구조(standard packaging structure)라고 부르기도 합니다. 클라이언트와 서버가 상호작용하는데 있어서 전송하는 매커니즘이 다 다르다면, 웹서비스가 플랫폼 중립을 이루기는 불가능할 것입니다. 보내고자 하는 메시지를 SOAP으로 감싸서 주고받으면, .Net에서 EJB를 호출하는 것이 가능해지는 것입니다. 따라서 웹서비스는 SOAP이라는 동일한 포장구조를 사용하여, 서로 다른 플랫폼의 통신을 편리하게 만듭니다.&lt;/p&gt;
+
+&lt;p&gt;XML은 정보를 구조적으로 조립할 수 있는 좋은 언어이기 때문에 XML 속의 정보를 꺼내어 사용하기가 편리합니다. 그래서 SOAP으로 감싸기 전에 객체를 XML로 변환하는 과정이 필요합니다. 클라이언트에서 요청을 보낼 땐 요청을 위한 정보를 XML로 변환시키고 SOAP으로 포장하여 보내면, 서버에서는 SOAP을 벗긴 후 내부 XML을 필요한 객체로 변환합니다. 이렇게 객체와 XML을 변환해주는 것을 &lt;strong&gt;OXM(Object-XML Mapping)&lt;/strong&gt;이라고  부르고, 대표적인 OXM으로는 JIBX, Castor, JAXB 등이 있습니다.&lt;/p&gt;
+
+&lt;p&gt;웹서비스에서 OXM을 처음 접해보신 분들은 OXM이 SOAP메시지로 변환해준다고 오해하시는 경우가 종종있습니다. 그러나 OXM은 콘텐츠객체와 XML 사이의 변환을 담당하기 때문에 웹서비스가 아닌 다른 기술환경에서도 많이 사용됩니다. 즉 OXM은 웹서비스 안에서만 사용되는 기술이 아닙니다. 또한, 웹서비스에서는 그림과 같이 OXM을 통해 변환된 XML을 SOAP형태로 포장하여 보내는 과정을 거칩니다.  SOAP Envelop 내부에는 응답/요청메시지가 존재합니다. 요청/응답 메시지의 엘리먼트 구조와 사용하는 타입의 형태는 WSDL과 매핑되기 때문에, WSDL로부터 생성된 Proxy를 보고 클라이언트 개발자는 해당서비스의 요청 파라미터가 어떤 엘리먼트로 감싸질지 유추할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;그리고 이러한 OXM을 사용하고 SOAP 바인딩을 실현시켜주는 것은 &lt;strong&gt;웹서비스 프레임워크의 역할&lt;/strong&gt;입니다. 웹서비스 프레임워크는 JAVA기반의 JAX-WS(Java API for XML – Web Service)와 .NET기반의 WCF(Windows Communication Foundation)가 있습니다. JAX-WS의 구현체로는 대표적으로 CXF, AXIS2가 있습니다. 이 프레임워크가 웹서비스의 WSDL의 생성과 SOAP 메시지의 바인딩 OXM 등을 적용하여 웹서비스의 전반적인 과정을 처리해줍니다. 때문에 개발자는 본인이 제공하려는 서비스와 클라이언트의 개발에 집중할 수 있고, CXF를 적용하고 몇 가지 옵션 등을 설정하여 원하는 웹서비스를 구축할 수 있습니다.&lt;br&gt;
+그럼 마지막으로 웹서비스 구성을 정리해봅니다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;정리&lt;br /&gt;&lt;br /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-01-1.jpg&quot; alt=&quot;pic5&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림5. 자세히 보는 웹서비스 구조&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;웹서비스에 대한 이야기를 그림 5를 통해 정리할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;첫 째, 웹서비스는 클라이언트와 서버의 분리를 통해 플랫폼 중립과 독립적인 진화를 이룹니다.&lt;br&gt;
+이 것을 이루기 위해 서비스 프로바이더와 클라이언트는 각각의 노력을 합니다. 먼저 서비스 프로바이더는 서비스의 구현과 클라이언트간의 기능 결합도를 줄이기 위해 서비스의 Spec을 분리하여 서비스 API를 제공합니다. 그럼 클라이언트는 API에만 의존하게 되고, 구현체와는 낮은 결합도를 가지게 됩니다. 그리고 클라이언트에서는 프록시에게 통신관련 처리를 위임하여, 서비스와의 URI결합도와 데이터구조 결합도를 줄일수 있습니다. 즉, 서비스의 위치가 변하거나 데이터구조가 변하여도 클라이언트의 핵심 비즈니스로직에는 영향이 미치지 않으며, 프록시만 재생성하여 적용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;둘째 웹서비스는 위치투명성을 가집니다.&lt;br&gt;
+웹서비스는 네트워크 공간에서 접근 가능해야 하기 때문에 서비스만의 위치를 가지고 있습니다. 이 것은 웹서비스의 특징 중 하나인 위치투명성을 의미합니다. 누구나에게 공개해야된다는 의미가 아닌, 정확한 위치가 있다는 의미로 이해할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;셋째 웹서비스의 전반적인 과정은 웹서비스 프레임워크가 도와줍니다.&lt;br&gt;
+웹서비스의 구현을 보다 쉽게 하기 위해서 훌륭한 웹서비스 프레임워크가 많이 등장했습니다. 즉, 웹서비스 프레임워크를 적절히 사용하면 내가 웹서비스를 구현하고 있는지 느끼지 못할 정도로 편리합니다.  WSDL의 생성과 적용된 OXM으로 메시지를 변환해서 SOAP에 담아 통신하는 과정까지 담당해주고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;웹서비스는 SOA를 기반으로 하기 때문에 처음에 기술보다는 개념을 이해하시는 것이 좋습니다. 저도 처음에 웹서비스를 사용할 때는 WSDL의 존재와 SOAP 메시지니의 구조와 같이 상세한 부분부터 접근하다보니 웹서비스의 전체적인 흐름에 대해서는 이해하지 못했습니다. 책을 읽고 그림으로 그리면서 이해하다 보니 보다 쉽게 이해할 수 있어서 그 내용을 공유해봅니다. 웹서비스를 공부하시는 분들께 조금이나마 도움이 되었기를 바랍니다. 끝까지 읽어주셔서 감사드리며 글을 마칩니다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;참고 서적&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“&lt;strong&gt;서비스 디자인 패턴&lt;/strong&gt;” , 로버트 다이뇨 저,  윤창석, 조성배 역, 에이콘, 2013&lt;br /&gt;&lt;br&gt;
+“&lt;strong&gt;자바 웹서비스&lt;/strong&gt;” , 데이비드 채플 저, 이창신 역 , 한빛미디어,  2002.06.29&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;참고 URL&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;위키 백과 – SOA, 웹서비스, SOAP, 플랫폼, OXM, UDDI, JAX-WS, WCFM&lt;br /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;“About Object-XML Mapping”,&lt;a href=&quot;http://www.eclipse.org/eclipselink/documentation/2.4/concepts/blocks002.htm&quot;&gt; http://www.eclipse.org/eclipselink/documentation/2.4/concepts/blocks002.htm&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“SOAP Binding”,&lt;a href=&quot;http://www.w3.org/2000/xp/Group/1/10/11/soap12-part2.html&quot;&gt; http://www.w3.org/2000/xp/Group/1/10/11/soap12-part2.html&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“SOAP기반 웹 서비스 구축하기”,&lt;a href=&quot;http://www.nextree.co.kr/p11410/&quot;&gt; http://www.nextree.co.kr/p2010/&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“WSDL”,&lt;a href=&quot;http://www.w3.org/TR/wsdl&quot;&gt; http://www.w3.org/TR/wsdl&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“SOAP 서비스”,&lt;a href=&quot;http://api.epeople.go.kr/guide/contents/wstype_soap.html&quot;&gt; http://api.epeople.go.kr/guide/contents/wstype_soap.html&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“웹서비스란?”,&lt;a href=&quot;http://api.epeople.go.kr/guide/&quot;&gt; http://api.epeople.go.kr/guide/&lt;/a&gt;&lt;br&gt;
+“CXF”,&lt;a href=&quot;http://cxf.apache.org/&quot;&gt;http://cxf.apache.org/&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“wsimport”,&lt;a href=&quot;,%20http://isurues.wordpress.com/2009/10/01/how-to-generate-your-jaxws-service-from-a-wsdl-using-wsimport/&quot;&gt; http://isurues.wordpress.com/2009/10/01/how-to-generate-your-jaxws-service-from-a-wsdl-using-wsimport/&lt;/a&gt;&lt;br&gt;
+“Accessing a Web Service from JAVA”,&lt;a href=&quot;http://wwu-pi.github.io/tutorials/lectures/eai/050_tutorial_ws_java.html&quot;&gt; http://wwu-pi.github.io/tutorials/lectures/eai/050_tutorial_ws_java.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
 </description>
-        <pubDate>Mon, 03 Mar 2014 00:00:00 +0900</pubDate>
-        <link>http://wooseok7.github.io/theme18/Hello-World/</link>
-        <guid isPermaLink="true">http://wooseok7.github.io/theme18/Hello-World/</guid>
+        <pubDate>Fri, 29 Aug 2014 23:10:17 +0900</pubDate>
+        <link>http://wooseok7.github.io//web%20service%20copy/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//web%20service%20copy/</guid>
+      </item>
+    
+      <item>
+        <title>“알고보면 쉬운 웹서비스”</title>
+        <description>&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;__name__&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;__main__&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;threading&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Thread&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;downloadWallpaper&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;st&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\r&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Downloading Image&amp;#39;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_alive&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sys&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stdout&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;st&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;.&amp;#39;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;time&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;img_thread&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;#39;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;Image of the day downloaded.&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+</description>
+        <pubDate>Fri, 29 Aug 2014 23:10:17 +0900</pubDate>
+        <link>http://wooseok7.github.io//%20MD%20template/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//%20MD%20template/</guid>
+      </item>
+    
+      <item>
+        <title>Web service</title>
+        <description>&lt;h1&gt;&lt;a href=&quot;http://www.nextree.co.kr/p11842/&quot;&gt;알고보면 쉬운 웹서비스&lt;/a&gt;&lt;/h1&gt;
+
+&lt;h3&gt;Posted by &lt;a href=&quot;http://www.nextree.co.kr/author/eykimnextree-co-kr/&quot;&gt;김 은영&lt;/a&gt; in &lt;a href=&quot;http://www.nextree.co.kr/category/study/&quot;&gt;배움터-열공&lt;/a&gt;, &lt;a href=&quot;http://www.nextree.co.kr/category/knowhow/&quot;&gt;일터-경험과노하우&lt;/a&gt; on Aug 29th,2014&lt;br /&gt;&lt;br /&gt;&lt;/h3&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;웹 서비스를 적용한 애플리케이션을 구축하는 것은 쉽지 않습니다. 그러나 웹서비스의 개념과 구성을 큰 그림으로 이해한다면, 웹서비스를 구축하는 과정이 다르게 느껴질 수 있습니다. 오늘은 그동안 웹서비스를 공부하면서 개운치 않았던 부분들을 긁어드리려 합니다. 알고보면 쉬운 웹서비스에 대해 함께 살펴봅니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;h2&gt;왜 웹 서비스를 선택할까요?&lt;br /&gt;&lt;br /&gt;&lt;/h2&gt;
+
+&lt;p&gt;먼저 왜 웹서비스를 사용하는지에 대한 궁금증부터 해소해볼까요. 우리가 웹서비스를 사용하는 목적 중 핵심은 바로 &lt;strong&gt;플랫폼 중립(neutrality)&lt;/strong&gt;입니다. 하나의 서비스를 제공하면, 다양한 플랫폼의 클라이언트가 서비스를 받아서 사용할 수 있도록 위함입니다. 외부 애플리케이션의 기능을 연결하기 위해서는 여러 기술적 제약이 따르기 마련입니다.  하지만 현재, 많은 애플리케이션은 PC 뿐 아니라 모바일기기와 태블릿 PC 등 다양한 기기가 사용 가능합니다. 하나의 기능을 각 플랫폼에 맞게 붙이는 것은 아주 비효율적이기 때문에, 플랫폼에 상관없이 기능을 제공하고 사용할 수 있는 기술이 필요했습니다. 이러한 목적을 가지고 애플리케이션을 서비스로 제공하자며 등장한 아키텍쳐가 SOA(Service Oriented Archetecture)이며, 이를 실현시키는 방법이 바로 웹서비스인 것입니다.&lt;/p&gt;
+
+&lt;p&gt;하지만 웹서비스를 이해함에 있어서, 플랫폼 중립만큼 중요한 것이 &lt;strong&gt;독립성&lt;/strong&gt;입니다. 플랫폼 중립을 이루겠다는 것은 서비스의 기술 셋을 알지 못해도 클라이언트는 서비스를 사용할 수 있도록 해주겠다는 의미가 담겨있습니다. 클라이언트가 플랫폼에 관한 결합도를 제거하여 재사용성을 크게 높일 수는 있었지만, 효율적인 상호작용을 위해서는 플랫폼 이외의 발생하는 결합도를 고려해야 합니다. 즉 기술셋 뿐 아니라 서비스를 사용하기 위해서 알고 있어야 하는 것들을 최소화시키는 것이 좋습니다. 그래야만 클라이언트와 서버간의 느슨한 결합을 이룰 수 있고 서버와 클라이언트가 각각 독립적인 진화를 지속할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-03.jpg&quot; alt=&quot;pic1&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림1. 서비스 진화에 의존하는 클라이언트의 진화&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;예를 들어, 웹서비스 소유자가 서비스의 데이터 타입을 하나 변경했다고 가정합니다. 클라이언트는 변경된 데이터타입을 적용시키기 위해서 클라이언트 쪽의 로직을 수정해야만 합니다.  클라이언트는 단순히 UI를 표현하는 애플리케이션일 수도 있고, 또 다른 기능을 연결하는 애플리케이션일 수도 있습니다. 클라이언트 쪽에서도 충분히 기능구현에 대한 복잡함이 존재하고 있습니다. 그런데 서비스의 진화에 영향을 받게 되면 그림1과 같이 클라이언트는 서비스보다도 무수히 많은 변화를 적용해야만 합니다. 즉, 좋은 웹서비스란 기존 클라이언트의 중단없이 서비스를 진화시킬 수 있어야 합니다. 이렇게 웹서비스는 독립성을 강조하고 있습니다. 때문에 제대로 웹서비스를 설계한다면 서버와 클라이언트가 독립적으로 진화할 수 있기 때문에, 유지보수 및 재사용성이 큰 이점이 됩니다.&lt;/p&gt;
+
+&lt;h2&gt;웹서비스는 어떻게 연결될까요?&lt;br /&gt;&lt;br /&gt;&lt;/h2&gt;
+
+&lt;p&gt;이번엔 비즈니스 로직의 흐름에서 웹서비스가 어떻게 자리잡고 있는지 알아봅니다. 웹서비스의 서비스와 클라이언트는 어떠한 레이어로 제한되어 있지 않고 기능을 제공하고 받는 역할에 따라 구분합니다. 반드시 서비스 프로바이더는 비즈니스로직의 구현체가 있고 클라이언트는 UI구현만 있는 것은 아닙니다. 하나의 기능을 처리하기 위해서 여러 웹서비스 호출이 일어날 수 있고, 클라이언트는 또다른 웹서비스를 제공하는 프로바이더가 될 수 있습니다. 그래서 웹서비스는 어딘가 위치하고 있는 비즈니스 로직의 흐름의 한 영역이라고 말합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-00-1.jpg&quot; alt=&quot;pic2&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림2. 비즈니스로직 흐름에서 연결되는 웹서비스의 구조&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;위 그림2와 같이 웹서비스는 비즈니스로직과 비즈니스로직을 연결합니다.  먼저 서비스 소유자는 제공하려는 비즈니스 로직을 구현합니다. 이렇게 바로 제공할 수도 있지만, 웹서비스로 제공하기 위해서는 인터페이스에 제공하려는 서비스를 나열합니다. 그럼 서비스를 클라이언트들이 사용할 수 있도록 특정 위치에 제공해야 합니다.  웹서비스의 특징 중 하나는 &lt;strong&gt;서비스가 네트워크상의 공간에 위치&lt;/strong&gt;하고 있어야 한다는 것입니다. 그래서 웹서비스는 서비스를 설명하는 언어인 &lt;strong&gt;WSDL&lt;/strong&gt;을 사용합니다. WSDL을 통해 서비스를 구성하는 오퍼레이션과 요청/응답 메시지 구조, 데이터 타입 등을 인지할 수 있습니다. 때문에 WSDL이 어디에 있는지만 안다면 바로 적용해서 서비스를 사용할 수 있기 때문에, 적용이 아주 편리합니다.&lt;/p&gt;
+
+&lt;p&gt;그럼 WSDL은 어디에 위치하고 있을까요? 흔히 WSDL이 위치하는 곳을 UDDI(Universal Description Discovery &amp;amp; Integragion)라고 설명하는 경우가 많습니다. 하지만 WSDL은 UDDI에 있을 수도 있고 혹은 없을 수도 있습니다. UDDI는 웹서비스 공개저장소라고 생각하시면 이해가 쉽습니다. WSDL을 찾을 수 있는 마켓이라고 보시면 됩니다. 클라이언트가 UDDI에서 WSDL을 Find해서 호출한다는 문구를 많이 보셨을 겁니다. UDDI는 여러 WSDL을 가지고 있는 마켓이기 때문에 이 곳에서 원하는 WSDL을 이름별, 카테고리별로 검색하고 사용하는 공간입니다. 원하는 서비스를 찾아서 적용한다는 의미가 바로 이것입니다. 하지만, UDDI가 아니더라도 네트워크상으로 접근이 가능한 곳에 위치시킨다면 웹서비스는 성립됩니다. 따라서 반드시 WSDL이 UDDI에 존재하는 것은 아닙니다.&lt;br&gt;
+실무에서는 주로 서비스 개발사와 클라이언트 개발사 사이의 협약을 통해 WSDL의 위치를 공개합니다. WSDL은 단순히 서비스에 관련한 정보를 가지고 있기 때문에, 프로젝트 초기에 웹서비스를 제공하는 쪽과 받는 쪽의 협약이 필요합니다. 이러한 과정을 &lt;strong&gt;서비스 협약&lt;/strong&gt;이라고 합니다. 서비스 협약을 통해서 웹서비스의 위치, 성능, 품질 등에 관하여 논의합니다. 하지만 서비스 협약에서는 서비스를 호출할 때 어떻게 보내야하고 어떤 형태로 응답받는지에 대한 세부내용은 논의하지 않습니다. 이 것은 WSDL을 통해 유추할 수 있기 때문입니다. 그렇다면 실제 프로젝트에서 WSDL만 가지고 어떻게 웹서비스를 연결할 수 있는지 알아봅니다.&lt;/p&gt;
+
+&lt;h2&gt;우리는 어떻게 웹서비스를 호출할 수 있을까요?&lt;br /&gt;&lt;br /&gt;&lt;/h2&gt;
+
+&lt;p&gt;앞에서 웹서비스는 WSDL로부터 서비스에 요청하고 응답받는 구조를 유추할 수 있다고 했습니다. 그렇다면 실무에서 클라이언트를 개발할 때 WSDL을 어떻게 적용하는지 알아봅니다.&lt;/p&gt;
+
+&lt;p&gt;클라이언트가 서비스 프로바이더의 서비스를 연결하기 위해서는 어떤 형태로 웹서비스를 보내야하는지 어떤 형태의 응답이 오는지 등을 알고 있어야 합니다. 하지만 개발자가 직접 이것을 인지하고 개발하는것은 어려움이 있을 뿐아니라, 독립적인 웹서비스의 구현을 방해하게 됩니다. 예를 들어, 클라이언트의 핵심로직에 온통 웹서비스를 부르는 통신관련 로직이 섞여 있다면, 서비스의 변경이 곧 클라이언트의 변경으로 직접 연결됩니다. 좋은 클라이언트는 서비스에 대한 의존도가 낮기 때문에 클라이언트의 핵심로직이 서비스의 변경으로 인해 영향을 받는 일을 최소화해야 합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-02.jpg&quot; alt=&quot;pic3&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림 3. 프록시를 이용한 웹서비스 설계&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;이러한 독립적인 클라이언트 구현을 위해 가장 보편적으로 사용되는 패턴이 &lt;strong&gt;프록시(Proxy) 패턴&lt;/strong&gt;입니다. 프록시는 웹서비스 통신을 위한 클래스 혹은 라이브러리의 집합입니다. 프록시패턴을 적용하여 클라이언트의 비즈니스로직과 통신관련로직을 분리합니다. 프록시는 서비스의 오퍼레이션의 in/out 구성 및 데이터타입, 요청/응답 메시지의 구조 등으로 구성됩니다. 따라서 클라이언트 로직에서 서비스를 호출할 때는 이 프록시만 호출하고, 그 후의 통신을 모두 이 프록시에게 위임합니다.&lt;/p&gt;
+
+&lt;p&gt;프록시를 개발자가 직접 개발한다면 이러한 독립이 의미가 없겠지요. 하지만 프록시는 wsdl을 통해 생성할 수 있습니다. 실제로 java에서는 jdk 1.6부터 제공하는 wsimport이나, Maven plugin을 통해 WSDL 위치만 입력하면 손쉽게 프록시 파일 묶음을 얻을 수 있습니다. 때문에 우리는 프록시를 직접 구현할 필요가 없고 핵심 비즈니스 로직에 집중할 수 있습니다. 뿐만 아니라 서비스에 변화가 생기더라도 프록시만 변경하면 되기 때문에 비즈니스 로직에는 웹서비스 기술이 침투하지 않습니다. WSDL은 웹 서비스의 오퍼레이션과 메시지를 표현하고, 이 문서를 이용하여 프록시를 생성하며, 프록시를 통해 원하는 서비스를 호출할 수 있는 것입니다.&lt;/p&gt;
+
+&lt;p&gt;막연하기만 했던 WSDL과 서비스의 관계가 프록시를 통해 명확히 이해할 수 있습니다. 그림 3과 같이 웹서비스 소유자는 구현한 서비스 메소드와 메시지를 서비스 설명자인 WSDL로 제공하고, 클라이언트는 WSDL로 부터 구현된 클래스들을 사용하여 웹서비스와 실질적인 연결을 이룹니다.&lt;/p&gt;
+
+&lt;p&gt;하지만 Proxy 패턴은 통신모듈이 캡슐화되어 있기 때문에 개발자가 통신오류에 관한 대비를 놓치기 쉽다는 단점이 있습니다. 따라서 웹서비스 통신에 관한 예외처리를 정확히 해주어야 합니다. 또한 그림 3과 같이 서비스 프록시는 서비스와의 결합을 풀어주는 대신 서비스 설명자와 강하게 결합하고 있습니다. 그렇기 때문에 서비스 설명자가 변하면 서비스 프록시를 다시 생성해서 연결해야 된다는 번거로움이 있습니다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;웹서비스 요청/응답메시지는 어떤 형태일까요?&lt;br /&gt;&lt;br /&gt;&lt;/h2&gt;
+
+&lt;p&gt;웹서비스는 표준 통신규약으로 SOAP(Simple Object Access Protocol)을 사용합니다. 객체를 접근을 쉽게 하기 위해서 사용하는 것이 SOAP인데 공부해보신 분들은 아시겠지만 의미는 Simple로 시작하는데 절대 간단하지 않습니다. 그러나 SOAP메시지만 보는 것을 넘어서, 웹서비스의 전체적인 구성 속에서 SOAP 의 역할을 이해하면 이 Simple의 의미를 알 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-04-1.jpg&quot; alt=&quot;pic4&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림4. WebService의 Data 변환 과정&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;SOAP의 이해를 돕기 위해서 위 그림4를 살펴봅니다. 그림과 같이 SOAP은 내가 보내고자 하는 메시지를 포장하는 포장지라고 보시면 됩니다. 그래서 SOAP을 표준포장구조(standard packaging structure)라고 부르기도 합니다. 클라이언트와 서버가 상호작용하는데 있어서 전송하는 매커니즘이 다 다르다면, 웹서비스가 플랫폼 중립을 이루기는 불가능할 것입니다. 보내고자 하는 메시지를 SOAP으로 감싸서 주고받으면, .Net에서 EJB를 호출하는 것이 가능해지는 것입니다. 따라서 웹서비스는 SOAP이라는 동일한 포장구조를 사용하여, 서로 다른 플랫폼의 통신을 편리하게 만듭니다.&lt;/p&gt;
+
+&lt;p&gt;XML은 정보를 구조적으로 조립할 수 있는 좋은 언어이기 때문에 XML 속의 정보를 꺼내어 사용하기가 편리합니다. 그래서 SOAP으로 감싸기 전에 객체를 XML로 변환하는 과정이 필요합니다. 클라이언트에서 요청을 보낼 땐 요청을 위한 정보를 XML로 변환시키고 SOAP으로 포장하여 보내면, 서버에서는 SOAP을 벗긴 후 내부 XML을 필요한 객체로 변환합니다. 이렇게 객체와 XML을 변환해주는 것을 &lt;strong&gt;OXM(Object-XML Mapping)&lt;/strong&gt;이라고  부르고, 대표적인 OXM으로는 JIBX, Castor, JAXB 등이 있습니다.&lt;/p&gt;
+
+&lt;p&gt;웹서비스에서 OXM을 처음 접해보신 분들은 OXM이 SOAP메시지로 변환해준다고 오해하시는 경우가 종종있습니다. 그러나 OXM은 콘텐츠객체와 XML 사이의 변환을 담당하기 때문에 웹서비스가 아닌 다른 기술환경에서도 많이 사용됩니다. 즉 OXM은 웹서비스 안에서만 사용되는 기술이 아닙니다. 또한, 웹서비스에서는 그림과 같이 OXM을 통해 변환된 XML을 SOAP형태로 포장하여 보내는 과정을 거칩니다.  SOAP Envelop 내부에는 응답/요청메시지가 존재합니다. 요청/응답 메시지의 엘리먼트 구조와 사용하는 타입의 형태는 WSDL과 매핑되기 때문에, WSDL로부터 생성된 Proxy를 보고 클라이언트 개발자는 해당서비스의 요청 파라미터가 어떤 엘리먼트로 감싸질지 유추할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;그리고 이러한 OXM을 사용하고 SOAP 바인딩을 실현시켜주는 것은 &lt;strong&gt;웹서비스 프레임워크의 역할&lt;/strong&gt;입니다. 웹서비스 프레임워크는 JAVA기반의 JAX-WS(Java API for XML – Web Service)와 .NET기반의 WCF(Windows Communication Foundation)가 있습니다. JAX-WS의 구현체로는 대표적으로 CXF, AXIS2가 있습니다. 이 프레임워크가 웹서비스의 WSDL의 생성과 SOAP 메시지의 바인딩 OXM 등을 적용하여 웹서비스의 전반적인 과정을 처리해줍니다. 때문에 개발자는 본인이 제공하려는 서비스와 클라이언트의 개발에 집중할 수 있고, CXF를 적용하고 몇 가지 옵션 등을 설정하여 원하는 웹서비스를 구축할 수 있습니다.&lt;br&gt;
+그럼 마지막으로 웹서비스 구성을 정리해봅니다.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2&gt;정리&lt;br /&gt;&lt;br /&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/20140827-eykim-webservice-01-1.jpg&quot; alt=&quot;pic5&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림5. 자세히 보는 웹서비스 구조&lt;/p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;웹서비스에 대한 이야기를 그림 5를 통해 정리할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;첫 째, 웹서비스는 클라이언트와 서버의 분리를 통해 플랫폼 중립과 독립적인 진화를 이룹니다.&lt;br&gt;
+이 것을 이루기 위해 서비스 프로바이더와 클라이언트는 각각의 노력을 합니다. 먼저 서비스 프로바이더는 서비스의 구현과 클라이언트간의 기능 결합도를 줄이기 위해 서비스의 Spec을 분리하여 서비스 API를 제공합니다. 그럼 클라이언트는 API에만 의존하게 되고, 구현체와는 낮은 결합도를 가지게 됩니다. 그리고 클라이언트에서는 프록시에게 통신관련 처리를 위임하여, 서비스와의 URI결합도와 데이터구조 결합도를 줄일수 있습니다. 즉, 서비스의 위치가 변하거나 데이터구조가 변하여도 클라이언트의 핵심 비즈니스로직에는 영향이 미치지 않으며, 프록시만 재생성하여 적용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;둘째 웹서비스는 위치투명성을 가집니다.&lt;br&gt;
+웹서비스는 네트워크 공간에서 접근 가능해야 하기 때문에 서비스만의 위치를 가지고 있습니다. 이 것은 웹서비스의 특징 중 하나인 위치투명성을 의미합니다. 누구나에게 공개해야된다는 의미가 아닌, 정확한 위치가 있다는 의미로 이해할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;셋째 웹서비스의 전반적인 과정은 웹서비스 프레임워크가 도와줍니다.&lt;br&gt;
+웹서비스의 구현을 보다 쉽게 하기 위해서 훌륭한 웹서비스 프레임워크가 많이 등장했습니다. 즉, 웹서비스 프레임워크를 적절히 사용하면 내가 웹서비스를 구현하고 있는지 느끼지 못할 정도로 편리합니다.  WSDL의 생성과 적용된 OXM으로 메시지를 변환해서 SOAP에 담아 통신하는 과정까지 담당해주고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;웹서비스는 SOA를 기반으로 하기 때문에 처음에 기술보다는 개념을 이해하시는 것이 좋습니다. 저도 처음에 웹서비스를 사용할 때는 WSDL의 존재와 SOAP 메시지니의 구조와 같이 상세한 부분부터 접근하다보니 웹서비스의 전체적인 흐름에 대해서는 이해하지 못했습니다. 책을 읽고 그림으로 그리면서 이해하다 보니 보다 쉽게 이해할 수 있어서 그 내용을 공유해봅니다. 웹서비스를 공부하시는 분들께 조금이나마 도움이 되었기를 바랍니다. 끝까지 읽어주셔서 감사드리며 글을 마칩니다.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;참고 서적&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“&lt;strong&gt;서비스 디자인 패턴&lt;/strong&gt;” , 로버트 다이뇨 저,  윤창석, 조성배 역, 에이콘, 2013&lt;br /&gt;&lt;br&gt;
+“&lt;strong&gt;자바 웹서비스&lt;/strong&gt;” , 데이비드 채플 저, 이창신 역 , 한빛미디어,  2002.06.29&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;참고 URL&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;위키 백과 – SOA, 웹서비스, SOAP, 플랫폼, OXM, UDDI, JAX-WS, WCFM&lt;br /&gt;&lt;br&gt;
+“About Object-XML Mapping”,&lt;a href=&quot;http://www.eclipse.org/eclipselink/documentation/2.4/concepts/blocks002.htm&quot;&gt; http://www.eclipse.org/eclipselink/documentation/2.4/concepts/blocks002.htm&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“SOAP Binding”,&lt;a href=&quot;http://www.w3.org/2000/xp/Group/1/10/11/soap12-part2.html&quot;&gt; http://www.w3.org/2000/xp/Group/1/10/11/soap12-part2.html&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“SOAP기반 웹 서비스 구축하기”,&lt;a href=&quot;http://www.nextree.co.kr/p11410/&quot;&gt; http://www.nextree.co.kr/p2010/&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“WSDL”,&lt;a href=&quot;http://www.w3.org/TR/wsdl&quot;&gt; http://www.w3.org/TR/wsdl&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“SOAP 서비스”,&lt;a href=&quot;http://api.epeople.go.kr/guide/contents/wstype_soap.html&quot;&gt; http://api.epeople.go.kr/guide/contents/wstype_soap.html&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“웹서비스란?”,&lt;a href=&quot;http://api.epeople.go.kr/guide/&quot;&gt; http://api.epeople.go.kr/guide/&lt;/a&gt;&lt;br&gt;
+“CXF”,&lt;a href=&quot;http://cxf.apache.org/&quot;&gt;http://cxf.apache.org/&lt;/a&gt;&lt;br /&gt;&lt;br&gt;
+“wsimport”,&lt;a href=&quot;,%20http://isurues.wordpress.com/2009/10/01/how-to-generate-your-jaxws-service-from-a-wsdl-using-wsimport/&quot;&gt; http://isurues.wordpress.com/2009/10/01/how-to-generate-your-jaxws-service-from-a-wsdl-using-wsimport/&lt;/a&gt;&lt;br&gt;
+“Accessing a Web Service from JAVA”,&lt;a href=&quot;http://wwu-pi.github.io/tutorials/lectures/eai/050_tutorial_ws_java.html&quot;&gt; http://wwu-pi.github.io/tutorials/lectures/eai/050_tutorial_ws_java.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/blockquote&gt;
+</description>
+        <pubDate>Fri, 29 Aug 2014 00:00:00 +0900</pubDate>
+        <link>http://wooseok7.github.io//web%20service/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//web%20service/</guid>
+      </item>
+    
+      <item>
+        <title>Java enum의 뿌리를 찾아서</title>
+        <description>&lt;h1&gt;Java: enum의 뿌리를 찾아서...&lt;/h1&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;Posted by 권 혁준 in 배움터 - 열공 on Aug 15th, 2014
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;이번 글에서는 자바 1.5버전부터 새롭게 추가된 열거형 상수인 enum(enumeration)에 대해 알아보겠습니다. 열거형은 서로 연관된 상수들의 집합입니다. 이번 글은 enum 정의와 enum 사용방법, 그리고 enum 활용법을 살펴 봅니다.&lt;/p&gt;
+
+&lt;h3&gt;1. enum이란?&lt;/h3&gt;
+
+&lt;p&gt;관련이 있는 상수들의 집합입니다. 자바에서는 final로 String과 같은 문자열이나 숫자들을 나타내는 기본 자료형의 값을 고정할 수 있습니다. 이렇게 고정된 값을 상수라고 합니다. 영어로는 constant입니다. 어떤 클래스가 상수만으로 작성되어 있으면 반드시 class로 선언할 필요는 없습니다. 이럴 때 class로 선언된 부분에 enum이라고 선언하면 이 객체는 상수의 집합이다. 라는 것을 명시적으로 나타냅니다. enum은 enumeration이라는 셈, 계산, 열거, 목록이라는 영어단어의 앞부분만 따서 만든 예약어입니다.&lt;/p&gt;
+
+&lt;h3&gt;2.상수를 정의하는 다양한 방법&lt;/h3&gt;
+
+&lt;p&gt;자바 1.5버전 이후에는 상수를 정의할 때 enum을 많이 사용합니다. 하지만 enum이 나오기 이전에는 다양한 방법으로 상수를 정의했습니다. 그래서 enum에 대해 알아보기에 앞서 자바 1.5버전 이전에는 어떻게 상수를 정의했는지 알아보겠습니다. 아래 다음과 같은 코드가 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;      public static void main(String[] args) {        
+        /*
+         * 월요일 == 1
+         * 화요일 == 2
+         * 수요일 == 3
+         * 목요일 == 4
+         * 금요일 == 5
+         * 토요일 == 5
+         * 일요일 == 6
+         */
+        int day = 1;
+
+        switch (day) {
+        case 1:
+            System.out.println(&amp;quot;월요일 입니다.&amp;quot;);
+            break;
+        case 2:
+            System.out.println(&amp;quot;화요일 입니다.&amp;quot;);
+            break;
+        case 3:
+            System.out.println(&amp;quot;수요일 입니다.&amp;quot;);
+            break;
+
+            /*
+             * ... 생략 ...
+             */
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;위 소스에서는 항상 1은 월요일 2는 화요일 그리고 7은 일요일로 정의되어야 합니다. 변하지 않는 상수 값에 따라 그 값에 해당하는 요일을 고정하고 있습니다. 그런데 위 소스는 주석으로 상수 의미를 전달하고 있습니다. 만일 주석이 사라지거나 혹은 주석 부분과 상수를 사용하는 부분이 분리된다면 각각의 숫자들이 어떤 것을 의미하는지 이해하기 어렵습니다. 그래서 이름 만으로 어떤 것을 의미하는지 알 수 있다면 더 좋을 것입니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    public class EnumExample {
+
+    private final static int MONDAY = 1;
+    private final static int TUESDAY = 2;
+    private final static int WEDNESDAY = 3;
+    private final static int THURSDAY = 4;
+    private final static int FRIDAY = 5;
+    private final static int SATURDAY = 6;
+    private final static int SUNDAY = 7;
+
+    public static void main(String[] args) {        
+
+        int day = MONDAY;
+
+        switch (day) {
+        case MONDAY:
+            System.out.println(&amp;quot;월요일 입니다.&amp;quot;);
+            break;
+        case TUESDAY:
+            System.out.println(&amp;quot;화요일 입니다.&amp;quot;);
+            break;
+        case WEDNESDAY:
+            System.out.println(&amp;quot;수요일 입니다.&amp;quot;);
+            break;
+
+            /*
+             * ... 생략 ...
+             */
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;위 소스 코드에서 final을 사용하여 한번 지정하면 바뀌지 않게 설정하면서 동시에 static을 사용하여 메모리에 한 번만 할당 되게 설정하였습니다. 또한, 이름이 있어 이것이 무엇을 의미하는지 한눈에 알 수 있습니다. 여기에도 한 가지 안 좋은 점이 있습니다. 예를 들어 위 소스에 달에 대한 상수를 더 추가해야 합니다. 그렇게 작성하면 상수가 너무 많아 지고 한눈에 상수들이 어떤 것에 관련된 것인지 보기 힘듭니다. 또한, 각각의 상수의 집합에서 같은 이름으로 정의된 상수가 있다면 중복된 이름이기 때문에 컴파일 단계에서 오류가 발생합니다. 그래서 class 또는 인터페이스를 사용하여 각각의 집합끼리 상수가 정의되고 중복된 이름이 있어도 오류가 발생하지 않게 할 수 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;interface DAY{
+    int MONDAY = 1;
+    int TUESDAY = 2;
+    int WEDNESDAY = 3;
+    int THURSDAY = 4;
+    int FRIDAY = 5;
+    int SATURDAY = 6;
+    int SUNDAY = 7;
+}
+
+interface MONTH{
+    int JANUARY = 1;
+    int FEBRUARY = 2;
+    int MARCH = 3;
+    int APRIL = 4;
+    int MAY =5;
+    int JUNE = 6;
+    int JULY = 7;
+    int AUGUST = 8;
+    int SEPTEMBER = 9;
+    int OCTOBER = 10;
+    int NOVEMBER = 11;
+    int DECEMBER = 12;
+}
+
+public class EnumExample {
+
+    public static void main(String[] args) {
+
+        if(DAY.MONDAY == MONTH.JANUARY){
+            System.out.println(&amp;quot;두 상수는 같습니다.&amp;quot;);
+        }       
+
+        int day = DAY.MONDAY;
+
+        switch (day) {
+        case DAY.MONDAY:
+            System.out.println(&amp;quot;월요일 입니다.&amp;quot;);
+            break;
+        case DAY.TUESDAY:
+            System.out.println(&amp;quot;화요일 입니다.&amp;quot;);
+            break;
+        case DAY.WEDNESDAY:
+            System.out.println(&amp;quot;수요일 입니다.&amp;quot;);
+            break;
+
+            /*
+             * ... 생략 ...
+             */
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;위 소스 코드를 보시면 깔끔하게 두 개의 특징을 갖는 상수 집합을 작성했습니다. 또한 각각의 집합에서는 이름이 같은 상수도 정의할 수 있습니다. 그리고 interface에서 선언된 변수는 public static final 속성을 생략할 수 있는 특징을 이용하여 코드를 조금 더 간결하게 작성할 수 있습니다. 하지만 위의 방법에도 하나의 문제가 있습니다. 서로 다른 집합에 정의된 상수들은 서로 비교하면 안 됩니다. 위 소스 30줄과 같이 다른 집합의 상수를 비교하면 컴파일 단계에서 에러를 확인할 수 있어야 하지만, 위 코드는 확인할 수 없습니다. 그래서 런타임 단계에서 예기치 못한 문제를 발생시킬 수 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;class Day{
+    public final static Day MONDAY = new Day();
+    public final static Day TUESDAY = new Day();
+    public final static Day WEDNESDAY = new Day();
+    /*
+     * ... 생략...
+     */
+}
+
+class Month{
+    public final static Month JANUARY = new Month();
+    public final static Month FEBRUARY = new Month();
+    public final static Month MARCH = new Month();  
+    /*
+     * ... 생략...
+     */
+}
+
+public class EnumExample {
+
+    public static void main(String[] args) {        
+
+        if(Day.MONDAY == Month.JANUARY){
+            System.out.println(&amp;quot;두 상수는 같습니다.&amp;quot;);
+        }
+
+        Day day = Day.MONDAY;
+
+        switch (day) {
+        case DAY.MONDAY:
+            System.out.println(&amp;quot;월요일 입니다.&amp;quot;);
+            break;
+        case DAY.TUESDAY:
+            System.out.println(&amp;quot;화요일 입니다.&amp;quot;);
+            break;
+        case DAY.WEDNESDAY:
+            System.out.println(&amp;quot;수요일 입니다.&amp;quot;);
+            break;
+
+            /*
+             * ... 생략 ...
+             */
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;위 코드를 보시면 interface로 작성된 상수들의 집합을 class로 바꾸었습니다. 그리고 각각의 상수들의 타입을 자신의 상수 집합의 이름으로 지정하였습니다. 그리고 자기 자신을 인스턴스화 한 값을 할당합니다. 이 말은 각각의 상수들이 서로 다른 데이터를 의미합니다. 하지만 같은 집합의 상수들은 같은 데이터 타입을 갖습니다. 즉 데이터 타입은 같지만 서로 다른 데이터 값을 가지고 있습니다. 이제 코드 23줄을 보시면 컴파일 단계에서 에러가 발생합니다. 에러의 내용은 서로 다른 데이터 타입은 비교할 수 없다는 내용입니다. 런타임에서 발생할 수 있는 에러를 컴파일 단계에서 검출하도록 수정하여 예기치 못한 오류를 사전에 차단할 수 있습니다. 하지만 여기서 우리가 작성한 상수들을 못 쓰는 경우도 있습니다. switch문에서는 사용하지 못합니다. 위 코드 29줄을 보시면 에러가 날 것입니다. 그 이유는 switch 문의 조건에 들어가는 데이터 타입이 제한적이기 때문입니다. 이 부분은 상당히 아쉬운 부분입니다. 왜냐하면, 상수를 사용할 때 switch을 사용해야 보기가 좋고 가독성이 좋기 때문입니다. 그래서 이러한 문제가 위 소스 코드를 이용한 상수를 활용한 방법의 문제점이라고 볼 수 있습니다. 그래서 이러한 문제점을 해결하는 방법 중에 하나가 enum 입니다.&lt;br&gt;  &lt;/p&gt;
+
+&lt;h3&gt;3. enum을 사용한 상수 정의하기&lt;/h3&gt;
+
+&lt;p&gt;enum은 열거형이라고 합니다. 열거형은 서로 연관된 상수들의 집합이라고 할 수 있습니다. 위의 예제에서는 Day와 Month가 말하자면 열거인 셈입니다. 이러한 패턴을 자바 1.5부터 지원하였으며 이것이 열거형입니다. 작성된 위 코드를 enum으로 바꿔봅니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;enum Day{
+    MONDAY,TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+}
+
+enum Month{
+    JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, 
+    AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER;
+}
+
+public class EnumExample {
+
+    public static void main(String[] args) {        
+
+        Day day = Day.MONDAY;
+
+        switch (day) {
+        case MONDAY:
+            System.out.println(&amp;quot;월요일입니다.&amp;quot;);
+            break;
+        case TUESDAY:
+            System.out.println(&amp;quot;화요일입니다.&amp;quot;);
+            break;
+        case WEDNESDAY:
+            System.out.println(&amp;quot;수요일입니다.&amp;quot;);
+            break;
+
+            /*
+             * ... 생략 ...
+             */
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;이전에 상수를 정의한 방법에서는 class 또는 interface를 사용하여 정의하였습니다. 하지만 이제는 enum 키워드를 사용합니다. 위 예제처럼 enum이라는 키워드를 사용하고 상수의 집합을 의미하는 이름을 입력하면 됩니다. 그리고 위 예제처럼 각각의 상수들의 이름을 차례대로 나열하면 상수가 정의됩니다. 또한, switch 문의 레이블은 조건으로 넘어온 데이터 타입을 알고 있습니다. 그래서 각각의 레이블에서는 enum의 데이터 타입을 생략하고 상수만 입력할 수 있습니다.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/hjkwon.140813.enum04.png&quot; alt=&quot;nextree&quot;&gt;&lt;br&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;&amp;lt;그림4&amp;gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;위 그림 1은 class를 이용한 상수 패턴이고, 2는 enum을 사용한 상수 정의 방법입니다. 1과 2는 똑같은 기능을 합니다. 하지만 1보다 2 방법이 훨씬 더 간결하고 가독성이 더 좋습니다. 1의 방법은 자바에서 많은 사람이 쓰는 패턴입니다. 이러한 패턴을 문법적으로 지원한 것이 enum 입니다. enum을 사용하는 이유는 다음과 같습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;코드가 단순해지며 가독성이 좋습니다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;인스턴스 생성과 상속을 방지합니다.  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;키워드 enum을 사용하기 때문에 구현의 의도가 열거임을 분명하게 나타낼 수 있습니다.  &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;지금까지 enum을 사용한 상수정의를 살펴 보았습니다.&lt;/p&gt;
+
+&lt;h3&gt;4. enum과 생성자&lt;/h3&gt;
+
+&lt;h4&gt;(1) enum클래스의 원소에 추가 속성 부여&lt;/h4&gt;
+
+&lt;p&gt;enum의 각 열거형 상수에 추가 속성을 부여할 수 있습니다. 예를 들어 enum타입의 상수들이 행성(Planet)을 의미할 때, 이름을 나타내는 상수뿐만이 아니라 질량과 반지름이라는 속성까지 함께 표현할 수 있습니다. 다음의 예제는 왼쪽과 오른쪽을 나타내는 상수에 한글이름이라는 추가 속성을 부여합니다.&lt;br&gt;  &lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    public enum RoadSide {
+    //
+    Left(&amp;quot;왼쪽&amp;quot;),
+    Right(&amp;quot;오른쪽&amp;quot;); 
+
+    private String krName;
+
+    private RoadSide() {
+        //
+    } 
+
+    private RoadSide(String krName) {
+        this.krName = krName; 
+    }
+
+    public String getKrName() {
+        return krName; 
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;생성자의 파라미터를 통해 추가 속성을 enum클래스의 필드(field)에 설정해주고, getter메소드(method)를 통해 해당 속성을 필요할 때에 가져다 쓸 수 있게 합니다. 이처럼 메소드나 필드를 enum 타입에 추가하면 enum 상수에 어떤 데이터를 연관시킬 수 있습니다. 열거형 상수를 모아 놓는 간단한 형태에서 시작하지만, 끊임없이 진화하여 완벽한 추상체가 될 수 있는 것입니다.&lt;br&gt;&lt;/p&gt;
+
+&lt;h4&gt;(2) enum생성자는 왜 private인가?&lt;/h4&gt;
+
+&lt;p&gt;Java에서 enum 타입은 열거형을 의미하는 특별한 형태의 클래스입니다. 그렇기 때문에 일반 클래스와 같이 생성자(Constructor)가 있어야 합니다. 물론 생성자를 만들어주지 않아도 Java가 defaul t생성자를 만들어주긴 하지만, enum의 경우에는 다른 클래스들과 달리 일반적으로 생성자의 접근 제어자를 private로 지정 해야합니다.. enum 타입의 생성자를 일반적인 클래스의 생성자와 같이 public으로 설정하거나 protected로 하게 되면 다음과 같은 에러가 발생합니다.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/yrkim-140813-enum-01.png&quot; alt=&quot;nextree&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;enum타입은 고정된 상수들의 집합으로써, 런타임(run-time)이 아닌 컴파일타임(compile-time)에 모든 값을 알고 있어야 합니다. 즉 다른 패키지나 클래스에서 enum 타입에 접근해서 동적으로 어떤 값을 정해줄 수 없습니다. 따라서 컴파일 시에 타입안정성이 보장됩니다(해당 enum클래스 내에서 까지도 new키워드로 인스턴스 생성이 불가능하며 newInstance(), clone()등의 메소드도 사용 불가). 이 때문에 생성자의 접근제어자를 private으로 설정해야 합니다. 이렇게 되면 외부에서 접근 가능한 생성자가 없으므로 enum타입은 실제적으로 final과 다름이 없습니다. 클라이언트에서 enum의 인스턴스를 생성할 수 없고 상속을 받을 수도 없으므로, 클라이언트의 관점에서 보면 인스턴스는 없지만 선언된 enum 상수는 존재하는 셈입니다. 결국 enum타입은 인스턴스 생성을 제어하며, 싱글톤(singleton) 을 일반화합니다. 이러한 특성 때문에, enum타입은 싱글톤을 구현하는 하나의 방법으로 사용되기도 합니다.&lt;/p&gt;
+
+&lt;h3&gt;5. enum활용&lt;/h3&gt;
+
+&lt;h4&gt;if문 사용을 줄이기&lt;/h4&gt;
+
+&lt;p&gt;이번에는 enum을 활용해서 if 문을 사용을 자제하겠습니다. 우리가 개발하다 보면 어떤 값에 대한 반대의 값을 반환하고 그 값에 따른 무언가를 수행하는 코드를 작성하는 경우가 있습니다. 예를 들어 스위치를 on/off 하는 예제에서 on이면 전원 을 off하고, off이면 on 해야 합니다. 이럴 때 우리는 많은 if 문을 통해 코드를 작성합니다. 그래서 코드에 if ~ else 구문이 많고 코드가 지저분해져 가독성이 떨어집니다. 그래서 enum을 활용해서 if~else 구문을 최대한 줄이고 가독성이 좋게 코드를 작성합니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;public enum PowerSwitch {
+    //
+    ON(&amp;quot;켜짐&amp;quot;),
+    OFF(&amp;quot;꺼짐&amp;quot;);
+
+    private String krName;
+
+    private PowerSwitch(){
+        //
+    }
+
+    private PowerSwitch(String krName){
+        this.krName = krName;
+    }
+
+    public String getKrName(){
+        return krName;
+    }
+
+    public PowerSwitch opposite() {
+        // 
+        if (this == PowerSwitch.ON) {
+            return PowerSwitch.OFF;  
+        } else {
+            return PowerSwitch.ON; 
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;위 소스를 보시면 enum을 통해 ON, OFF 이름으로 각각 상수를 정의했습니다. 그리고 opposite() 메소드를 통해 ON 상수에서 호출하면 OFF를 반환하고, OFF 상수에서 호출하면 ON을 반환하게 되는 메소드입니다. 즉 이 메소드를 호출하는 입장에서 opposite() 메소드 호출로 ON 또는 OFF에 해당하는 반대의 값을 반환받을 수 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;public class PowerSwitchMain {
+        //
+    public static void main(String[] args) {
+        PowerSwitch powerSwitch = PowerSwitch.ON;
+        displayByPowerSwitch(powerSwitch.opposite());       
+    }
+
+    public static void displayByPowerSwitch (PowerSwitch powerSwitch){
+        if(powerSwitch == PowerSwitch.ON){
+            System.out.println(&amp;quot;전원을 on 합니다.&amp;quot;);
+        }else{
+            System.out.println(&amp;quot;전원을 off 합니다.&amp;quot;);
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;위 소스 3줄을 보시면 직접 powerSwitch 변수에 ON 상수를 할당했습니다. 그리고 powerSwitch 변수를 통해 opposite() 메소드를 호출하면 OFF 상수를 반환합니다. 만약에 opposite() 메소드가 없다면 if 구문을 사용해서 powerSwitch 변수에 있는 값을 확인하는 작업을 수행해야 합니다. 하지만 opposite() 메소드를 호출함으로써 한 번에 알 수 있습니다. 그리고 displayByPowerSwitch() 메소드를 통해서 ON 또는 OFF에 따른 작업을 수행합니다. enum을 통해 메인 메소드에서는 if 문을 사용하지 않고 간단하게 on/off 하는 작업을 구현할 수 있습니다.  &lt;/p&gt;
+
+&lt;h3&gt;6. Java enum과 다른 언어의 enum&lt;/h3&gt;
+
+&lt;p&gt;각 언어에서 enumeration을 표현하는 방법은 각각 다릅니다. 현재 살펴보고 있는 Java와 문법적으로 비슷하게 enum을 사용하는 언어는 C, Perl, C#, C++, Go 등이 있습니다. 그 외에는 Pascal과 Ada가 문법적으로 비슷합니다. Python이나 Fortran, VBA등의 언어도 각자의 표현 방식으로 enumeration을 나타냅니다. 이 중 C, C++의 특징과 간단한 사용법을 알아봅니다. 다른 언어들의 enum은 위키피디아에 정의된 enumerated type을 참조하세요. (&lt;a href=&quot;http://en.wikipedia.org/wiki/Enumerated_type&quot;&gt;http://en.wikipedia.org/wiki/Enumerated_type&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h4&gt;(1) C언어&lt;/h4&gt;
+
+&lt;p&gt;처음 C언어에서는 enum타입이 지원되지 않았지만, ANSI 표준이 추가되고 난 후 사용할 수 있습니다. struct나 union과 같은 형태로 enum키워드를 사용하여 명시적으로 enumeration을 만듭니다. C언어에서의 enum은 상수가 내부에서 int형으로 저장되므로 산술 연산이 됩니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;enum season {
+    SPRING,
+    SUMMER,
+    FALL = 5,
+    WINTER = 10
+} 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;위와 같이 enum을 define하면 SPRING은 기본적으로 0의 정수 값을 가지고, 차례로 SUMMER는 1이 됩니다. 값을 직접 정해준 FALL과 WINTER는 5와 10의 값을 가지게 됩니다. 하지만 이와 달리 Java의 enum은 기본 값을 갖지 않습니다. Java에서의 enum은 앞서 언급했듯이 클래스처럼 사용되기 때문에 생성자를 통해서 추가 속성을 부여해야 합니다.&lt;/p&gt;
+
+&lt;h4&gt;(2) C++&lt;/h4&gt;
+
+&lt;p&gt;기본적으로 C++의 enum도 C와 비슷한 특징들을 가집니다. 하지만, C에서의 enum은 정수로 다루어지지만 C++에서는 그 자체가 실제 타입 이라는 큰 차이점이 있습니다. 또한 C++11부터는 타입안정성(type-safety)을 더욱 강력하게 보장하고 있습니다. 그 전에는 C와 같이 “enum”키워드 만으로 열거형을 표현 했지만 “enum class”를 사용하여 int형식으로의 암묵적인 변환과 같은 약점들을 극복하고 타입 안정성을 보장할 수 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;enum class Season{
+    SPRING,
+    SUMMER,
+    FALL,
+    WINTER
+};
+enum class Framework{
+    SPRING, // C++03까지의 “enum”의 scope는 enum{};의 scope에 국한되지 않으므로 다른enum타입이라도 같은 열거이름을 사용할 수 없었지만 “enum class”로는 가능 
+    EJB
+};
+int main(int argc, _TCHAR* argv[])
+{
+    Season s = SUMMER; // error: Season의 열거이름은 그 scope안에서만 유효
+    Framework f = Framework::EJB; // scope를 지정해주어 가능
+    if(Season::SPRING == Framework::SPRING) { // error: 서로 다른 타입이므로 비교불가능
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;7.맺음말&lt;/h3&gt;
+
+&lt;p&gt;Java의 열거형 상수인 enum의 뿌리를 찾아 시시콜콜한 여행을 해 보았습니다.  enum이 나오기 전 상수를 어떻게 사용했는지 살펴 보았습니다. 그리고 enum이 나오면서 상수를 사용법이 어떻게 달라졌는지도 알아보았습니다. 평소 지나치고 있었던 enum이었는데, 시간이 있어 enum 불확실성을 해소하는 시간을 가졌습니다.   감사합니다.&lt;/p&gt;
+
+&lt;h3&gt;참고 도서 및 사이트&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Joshua Bloch저, 심재철 옮김 / Effective Java 2nd Edition &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;웹 문서 - &lt;a href=&quot;http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html&quot;&gt;http://docs.oracle.com/javase/7/docs/api/java/lang/Enum.html&lt;/a&gt;  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;웹 문서 - &lt;a href=&quot;http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html&quot;&gt;http://docs.oracle.com/javase/tutorial/java/javaOO/enum.html&lt;/a&gt; &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;웹 문서 - &lt;a href=&quot;http://www.javapractices.com/topic/TopicAction.do?Id=1&quot;&gt;http://www.javapractices.com/topic/TopicAction.do?Id=1&lt;/a&gt;  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;웹 문서 - &lt;a href=&quot;http://opentutorials.org/module/516/6091&quot;&gt;http://opentutorials.org/module/516/6091&lt;/a&gt;  &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;웹 문서 - &lt;a href=&quot;http://sweeper.egloos.com/2996830&quot;&gt;http://sweeper.egloos.com/2996830&lt;/a&gt;  &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Fri, 15 Aug 2014 00:00:00 +0900</pubDate>
+        <link>http://wooseok7.github.io//Java%20enum/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//Java%20enum/</guid>
+      </item>
+    
+      <item>
+        <title>jQuery 그리드 플러그인 jqGrid (2/2)</title>
+        <description>&lt;p&gt;&lt;em&gt;jqGrid 첫번째 글에서는 그리드의 환경설정과 그리드를 사용하기 위해서 꼭 필요한 몇 가지들을 알아보았습니다. 이번 글에서는 프로젝트를 진행하면서 많이 사용한 그리드 메소드와 경험을 소개하겠습니다.&lt;/em&gt;  &lt;/p&gt;
+
+&lt;h1&gt;1. 메소드&lt;/h1&gt;
+
+&lt;p&gt;그리드에서 제공하는 메소드를 사용하기 위한 사용법부터 알아보겠습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;jQuery(&amp;#39;#grid_id&amp;#39;).jqGridMethod( parameter1,...parameterN );
+ex) jQuery(&amp;#39;#grid_id&amp;#39;).setGridParam({...}).hideCol(&amp;#39;somecol&amp;#39;).trigger(&amp;#39;reloadGrid&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;grid_id는 그리드가 설정된 ID입니다.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;jqGridMethod는 그리드에서 제공하는 메소드입니다.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;메소드에 따라 parameter가 존재할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;그리드에서 기본적으로 제공하는 메소드의 사용법은 위와 같습니다. 그리드 3.6버전 이후부터는 새롭게 추가된 방식으로 메소드를 사용할 수 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;jQuery(&amp;quot;#grid_id&amp;quot;).jqGrid(&amp;#39;jqGridMethod&amp;#39;, parameter1,...parameterN );
+ex)jQuery(&amp;quot;#grid_id&amp;quot;).jqGrid(&amp;#39;setGridParam&amp;#39;,{...}).jqGrid(&amp;#39;hideCol&amp;#39;,&amp;quot;somecol&amp;quot;).trigger(&amp;quot;reloadGrid&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ul&gt;
+&lt;li&gt;grid_id는 그리드가 설정된 ID입니다.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;jqGrid는 그리드의 인스턴스입니다.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;jqGridMethod는 그리드에서 제공하는 메소드입니다.&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;메소드에 따라 parameter가 존재할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;여기서 중요한 것은 jqGrid()안에 메소드명을 써줘야 하는데 꼭 ++‘메소드명’++의 형태로 써줘야 합니다.  다음으로 프로젝트를 진행하면서 많이 사용하였던 메소드에 대해 소개하겠습니다.&lt;/p&gt;
+
+&lt;h3&gt;addRowData(rowId, data, position, srcRowId)&lt;/h3&gt;
+
+&lt;p&gt;그리드에서 행을 추가해주는 메소드입니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rowId : 추가되는 행의 ID를 설정해줍니다.&lt;/li&gt;
+&lt;li&gt;data : 추가될 데이터입니다. 기존에 존재하는 데이터의 길이가 같아야 합니다.&lt;/li&gt;
+&lt;li&gt;position : 데이터가 추가될 위치를 정해줍니다. ‘first’, ‘last’, ‘before’, ‘after’ 4가지의 속성이 있습니다.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;srcRowId : position의 값이 ‘before’, ‘after’일 때 설정해줍니다. ID값이 들어옵니다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var addData = {
+            &amp;quot;id&amp;quot; : &amp;quot;006&amp;quot;,
+            &amp;quot;name&amp;quot;: &amp;quot;영진킴&amp;quot;,
+            &amp;quot;age&amp;quot; : &amp;quot;26&amp;quot;,
+            &amp;quot;sex&amp;quot; : &amp;quot;male&amp;quot;,
+        &amp;quot;position&amp;quot; : &amp;quot;사원&amp;quot;
+};  
+
+// before 3.6v
+$Grid.addRowData(&amp;#39;006&amp;#39;,addData,&amp;#39;after&amp;#39;,&amp;#39;002&amp;#39;);
+
+// after 3.6v
+$Grid.jqGrid(&amp;#39;addRowData&amp;#39;,&amp;#39;006&amp;#39;,addData,&amp;#39;after&amp;#39;,&amp;#39;002&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;br&gt;       &lt;/p&gt;
+
+&lt;h3&gt;clearGridData()&lt;/h3&gt;
+
+&lt;p&gt;현재 불러온 데이터를 초기화시켜주는 메소드입니다. 서버에 존재하는 데이터는 삭제되지 않습니다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// before 3.6v
+$Grid.clearGridData();
+
+// after 3.6v
+$Grid.jqGrid(&amp;#39;clearGridData&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;delRowData(rowId)&lt;/h3&gt;
+
+&lt;p&gt;rowId에 해당하는 행을 삭제해주는 메소드입니다. 서버에 존재하는 데이터는 삭제되지 않습니다.&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// before 3.6v
+$Grid.delRowData(&amp;#39;001&amp;#39;);
+
+// after 3.6v
+$Grid.jqGrid(&amp;#39;delRowData&amp;#39;,&amp;#39;001&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h3&gt;getCell(rowId, iCol)&lt;/h3&gt;
+
+&lt;p&gt;특정 셀에 있는 데이터를 가지고 오는 메소드입니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rowId : 가지고 올 데이터의 ID를 설정해줍니다.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;iCol : 가지고 올 colName을 설정해줍니다.&lt;/p&gt;
+
+&lt;p&gt;// before 3.6v&lt;br&gt;
+var cellData = $Grid.getCell(&amp;#39;001&amp;#39;,&amp;#39;name&amp;#39;);&lt;/p&gt;
+
+&lt;p&gt;// after 3.6v&lt;br&gt;
+var cellData = $Grid.jqGrid(&amp;#39;getCell&amp;#39;,&amp;#39;001&amp;#39;,&amp;#39;name&amp;#39;);&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;getRowData(rowId)&lt;/h3&gt;
+
+&lt;p&gt;rowId에 해당하는 데이터를 가져오는 메소드입니다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//before 3.6v
+var rowData = $Grid.getRowData(&amp;#39;001&amp;#39;);
+
+//after 3.6v
+var rowData = $Grid.jqGrid(&amp;#39;getRowData&amp;#39;,&amp;#39;001&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;setRowData(rowId, data, cssProp)&lt;/h3&gt;
+
+&lt;p&gt;데이터를 수정할 수 있는 메소드입니다. 서버에 존재하는 데이터는 수정되지 않습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rowId : 수정될 행의 ID를 설정해줍니다.&lt;/li&gt;
+&lt;li&gt;data : 추가될 데이터입니다. 기존에 존재하는 데이터의 길이가 같아야 합니다.&lt;/li&gt;
+&lt;li&gt;cssProp : CSS속성을 설정할 수 있습니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;setRowData 메소드를 사용시 data는 수정하지 않고 CSS만 적용하는 경우가 많은대 그때는 data에 false 값을 주고 CSS설정만 해주면 됩니다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// before 3.6v
+$Grid.setRowData(&amp;#39;001&amp;#39;, false, { background : &amp;#39;#feffc4&amp;#39; });
+
+// after 3.6v
+$Grid.jqGrid(&amp;#39;setRowData&amp;#39;, &amp;#39;002&amp;#39;, false, { background : &amp;#39;#feffc4&amp;#39; });
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;getDataIDs()&lt;/h3&gt;
+
+&lt;p&gt;전체 데이터의 ID를 가져오는 메소드입니다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// before 3.6v
+var dataIds = $Grid.getDataIDs();
+
+// after 3.6v
+var dataIds = $Grid.jqGrid(&amp;#39;getDataIDs&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;trigger(“reloadGrid”)&lt;/h3&gt;
+
+&lt;p&gt;그리드를 다시 불러오는 메소드입니다. 이 메소드는 그리드의 속성 중 하나인 loadonce 속성이 false인 상태에서만 동작합니다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$Grid.trigger(&amp;#39;reloadGrid&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;getGridParam(name)&lt;/h3&gt;
+
+&lt;p&gt;name에 해당하는 값을 반환해주는 메소드 입니다. name에 종류로는 그리드 options에 해당하는 값이 올 수 있습니다.&lt;br&gt;
+대표적으로 selrow, selarrrow가 자주 사용됩니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;selrow : 선택한 행의 ID를 가지고 옵니다. 여러 행이 선택되었다면 제일 마지막에 선택된 행의 ID를 가지고 옵니다.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;selarrrow : 여러 행을 선택하였을 때 각각의 ID를 가지고 옵니다.&lt;/p&gt;
+
+&lt;p&gt;// before 3.6v&lt;br&gt;
+var selRowId = $Grid.getGridParam(&amp;#39;selrow&amp;#39;);&lt;br&gt;
+var selRowIds = $Grid.getGridParam(&amp;#39;selarrrow&amp;#39;);&lt;/p&gt;
+
+&lt;p&gt;// after 3.6v&lt;br&gt;
+var selRowId = $Grid.jqGrid(&amp;#39;getGridParam&amp;#39;,&amp;#39;selrow&amp;#39;);&lt;br&gt;
+var selRowIds = $Grid.jqGrid(&amp;#39;getGridParam&amp;#39;,&amp;#39;selarrrow&amp;#39;);&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;setGridParam()&lt;/h3&gt;
+
+&lt;p&gt;그리드 options에 해당하는 값을 수정할 수 있습니다. &lt;br&gt;
+대표적으로 postData, url이 자주 사용됩니다. 또 setGridParam 메소드는 위에서 설명한 trigger 메소드와 같이 자주 사용됩니다.&lt;br&gt;
+예를 들어 postData에 검색할 값을 설정하고 바로 trigger메소드를 호출하면 검색한 데이터가 그리드에 그려지는 조회 기능을 구현할 수 있습니다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var searchData = &amp;#39;검색조건&amp;#39;;
+// getGridParam을 이용해서 postData를 가져온다.
+var postData = $Grid.jqGrid(&amp;#39;getGridParam&amp;#39;,&amp;#39;postData&amp;#39;);
+
+// postData에 검색할 data 세팅
+postData.search = searchData;
+
+// setGridParam을 이용해서 postData에 새로 설정해준 postData 설정 후 그리드를 다시 불러온다.
+
+// before 3.6v
+$Grid.setGridParam({&amp;#39;postData&amp;#39; : postData}).trigger(&amp;#39;reloadGrid&amp;#39;);
+
+// after 3.6v   
+$Grid.jqGrid(&amp;#39;setGridParam&amp;#39;, {&amp;#39;postData&amp;#39; : postData}).trigger(&amp;#39;reloadGrid&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;setSelection(rowId, onSelectRowEvent)&lt;/h3&gt;
+
+&lt;p&gt;특정 그리드 행을 선택/해제할 수 있는 메소드입니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rowId : 선택될 행의 ID를 설정해줍니다.&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;onSelectRowEvent : onSelectRow 이벤트를 활성화/비활성화할 수 있습니다. true/false 값이 들어오고 기본값은 true입니다.&lt;/p&gt;
+
+&lt;p&gt;// before 3.6v&lt;br&gt;
+$Grid.setSelection(&amp;#39;001&amp;#39;,false);&lt;/p&gt;
+
+&lt;p&gt;// after 3.6v&lt;br&gt;
+$Grid.jqGrid(&amp;#39;setSelection&amp;#39;,&amp;#39;001&amp;#39;,false);&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;resetSelection()&lt;/h3&gt;
+
+&lt;p&gt;선택된 행을 해제하는 메소드입니다.&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// before 3.6v
+$Grid.resetSelection();
+
+// after 3.6v
+$Grid.jqGrid(&amp;#39;resetSelection&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;2. 경험사례&lt;/h1&gt;
+
+&lt;p&gt;실제 프로젝트에서 그리드를 사용한 모습을 살펴보겠습니다.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/yjkim2-140807-jqgrid2-01.png&quot; alt=&quot;nextree&quot;&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;위에 보시는 그림은 실제 프로젝트에서 구현한 화면입니다. 위 화면에서 고객의 요구사항에 따라 정렬 기능을 추가하려고 합니다. 그리드의 장점 중의 하나는 정렬 기능을 제공해준다는 것이지만 그리드의 형식에 맞추어 서버를 구현한다면 오히려 시간이 더 많이 들 수도 있고 이 점을 어떤 이가 악용한다면 서버 과부하가 걸릴 수 있을 것입니다. 지금부터 간단한 정렬을 소개하도록 하겠습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// 그리드의 이벤트 중 하나인 onSortCol을 이용합니다.
+onSortCol : function(index, iCol, sortOrder) {
+    $Grid.setGridParam({datatype: &amp;#39;local&amp;#39;, loadonce : true});
+
+    // 그리드의 데이터를 가져와서 json sort 해줍니다.
+    var obj = $Grid.jqGrid(&amp;#39;getRowData&amp;#39;);
+    obj = sortByKey(obj, index);
+
+    // 그리드의 데이터를 clear하고 정렬된 json을 다시 세팅합니다.
+    $Grid.clearGridData();
+    $Grid.setGridParam({data:obj}).trigger(&amp;quot;reloadGrid&amp;quot;);
+    $Grid.setGridParam({datatype: &amp;#39;json&amp;#39;, loadonce : false});
+
+    // onSortCol 이벤트를 커스터마이징 한것이므로 기존의 이벤트를 부르지 못하게 stop 해줍니다.
+    return &amp;#39;stop&amp;#39;;
+}
+
+// sortByKey 함수는 자바스크립트에서 제공하는 sort를 이용하여 구현
+function sortByKey(array, key) {
+    return array.sort(
+            function(a, b) {
+                    var x = a[key];
+                    var y = b[key];
+                    return ((x &amp;lt; y) ? -1 : ((x &amp;gt; y) ? 1 : 0));
+        }
+    );
+})
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;
+그리드에서 컬럼 헤더를 클릭할 때 발생하는 이벤트를 이용하여 구현한 예제입니다. 위의 예제를 설명하자면 그리드는 헤더를 클릭 시 ajax 통신을 통해서 데이터를 가지고 옵니다. 이때 이벤트 안에서 datatype을 local형식으로 조작 후 현재 불러온 데이터만 가지고 자바스크립트를 이용하여 정렬해준 후 이벤트를 빠져나오는 방식으로 구현했습니다. 위의 예제는 데이터를 json 방식으로 가져왔을 때의 예제입니다.&lt;/p&gt;
+
+&lt;h1&gt;3. 마치며&lt;/h1&gt;
+
+&lt;p&gt;그리드의 메소드와 간략한 예제를 소개하였습니다. 이 말고도 실제 프로젝트에서 그리드를 이용한 다양한 예제가 많이 있지만, 그리드의 장점이지만 단점일 수도 있는 정렬 예제를 소개했습니다. 제가 소개한 것은 그리드의 한 부분입니다. 그리드를 더 많이 이해하고 활용한다면 보다 쉽고 편리한 개발이 되겠지요. 감사합니다.&lt;/p&gt;
+
+&lt;h3&gt;참고도서 및 사이트&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;jqGrid Wiki methods(&lt;a href=&quot;http://www.trirand.com/jqgridwiki/doku.php?id=wiki:methods&quot;&gt;http://www.trirand.com/jqgridwiki/doku.php?id=wiki:methods&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Posted by 김 영진 in 배움터 - 열공, 일터 - 경험과 노하우 on Aug 10th, 2014&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 10 Aug 2014 00:00:00 +0900</pubDate>
+        <link>http://wooseok7.github.io//jQuery/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//jQuery/</guid>
+      </item>
+    
+      <item>
+        <title>Spring으로 SOAP기반 CXF 웹서비스 구축하기</title>
+        <description>&lt;h1&gt;Spring으로 SOAP기반 CXF 웹서비스 구축하기&lt;/h1&gt;
+
+&lt;p&gt;Posted by 김 은영 in 배움터 - 열공, 일터 - 경험과 노하우 on Aug 10th, 2014  &lt;/p&gt;
+
+&lt;p&gt;오늘은 스프링프레임워크에서 CXF를 이용하여 SOAP기반의 웹서비스를 만드는 과정에 대해 소개합니다. 웹서비스의 전반적인 개요는 포스팅 &lt;a href=&quot;%E2%80%9Chttp://www.nextree.co.kr/p2010/%E2%80%9D&quot;&gt;SOAP 기반 웹서비스 구축하기(“http://www.nextree.co.kr/p2010/”)&lt;/a&gt; 을 참고하시면 좋습니다. 이 글은 웹서비스 구축에 초점을 맞추었습니다.&lt;/p&gt;
+
+&lt;p&gt;웹서비스는 서비스를 처리하는 부분(Service Provider)과 서비스를 요청하고 처리 결과를 표현하는 부분(Service Consumer/Presenter)이 분리되어 있더라도, Web을 통해 통신하여 실행되는 시스템의 컴포넌트 묶음을 말합니다. 단순히 MVC와 같이 Model과 View, Controller를 분리한 것이 아닌, Back-end Side와 Front-end Side를 컴포넌트 뿐 아니라 개발환경까지 물리적으로 분리 된 상태에서 실행되는 시스템입니다. 몇 달 전 웹서비스 프로젝트에 참여하였을 때, 저희는 서버사이드를 개발하고 인도의 개발사에서 UI를 개발했습니다. 그렇다면 저희가 제공하는 웹서비스를 그들은 어떻게 받아서 처리할 수 있을까요? 아래 그림을 통해 WebService 원리를 살펴봅니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-01-2.jpg&quot; alt=&quot;nextree&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림1.웹서비스의 구조&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;그림 1과 같이 Web Service Consumer는 Web Service Provider와 통신을 합니다. 이 때의 데이터는 SOAP으로 바인딩 됩니다. 핵심은 &lt;strong&gt;WSDL(Web Services Description Language)&lt;/strong&gt;입니다. WSDL은 웹서비스를 제공하는 Server와 사용하는 Client을 연결해 주는 문서입니다. 시스템 요구사항대로 구현된 서비스들의 명세를 WSDL에 담아 명시해두면, 서비스를 요청하는 쪽에서 이 문서를 보고 해당 서버의 서비스는 어떤 것들이 있고, 각 서비스들의 파라미터와 리턴객체은 어떤 타입으로 주고 받는지 확인합니다. 즉,  서비스를 어떤형태로 요청하고 응답받아서 처리할 것인지는 WSDL을 통해 결정할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-06-1.jpg&quot; alt=&quot;nextree&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림2.웹서비스 시스템 구성&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;웹서비스를 구현하기 위해서는 그림1과 같은 논리적인 구조 뿐 아니라, 어떤 기술을 사용할지에 대한 고민도 필요합니다. 웹서비스 프레임워크와 OXM을 어떻게 결정하느냐에 따라 성능과 구현 효율이 현저하게 달라질 수 있기 때문입니다.&lt;br&gt;
+오늘 소개할 예제는 그림2와 같은 웹서비스 시스템 구성을 갖추었습니다. Spring을 사용하였지만 Spring-WS 대신 CXF 프레임워크를 사용하였고, Spring은 POJO Container로 적용하여 빈 설정의 효율을 높였습니다. CXF는 웹서비스를 제공해주는 웹서비스 프레임워크입니다. 대표적인 웹서비스 프레임워크로는 CXF, AXIS, Spring-WS가 있습니다. 세 프레임워크의 자세한 차이는 &lt;a href=&quot;http://architects.dzone.com/articles/apache-cxf-vs-apache-axis-vs&quot;&gt;http://architects.dzone.com/articles/apache-cxf-vs-apache-axis-vs&lt;/a&gt;를 참고하시기 바랍니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-07-1.jpg&quot; alt=&quot;nextree&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림3.OXM의 원리&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;웹서비스는 Consumer가 WSDL에서 검색한 Service에 요청XML을 보내면, Provider가 이 문서를 객체로 변환해서 처리를 한 후 다시 Client에게 응답XML을 보내는 과정을 가집니다. 때문에 서비스요청을 표준문서인 XML로 Binding(Marshaling 혹은 Serialize)하고, 그 문서를 다시 시스템에서 처리 가능한 오브젝트로 Binding(Demarshaling 혹은 Deserialize)하는 과정이 반드시 필요합니다. 따라서 OXM은 웹서비스에서 핵심적인 역할을 담당하고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;OXM은 Jibx, Castor, JAXB 등 다양한 종류가 있는데, 이 중에서도 JAXB를 선택한 이유는 웹서비스 플랫폼인 CXF에 가장 적용하기 편리한 OXM이기 때문입니다. 뿐만 아니라 JAXB는 Java Architecture for XML Binding의 약자로서 JAVA구조에 가장 적합하기 때문에 JAVA로 구현하는 웹서비스에서 적용하기 편리한 기술입니다.&lt;/p&gt;
+
+&lt;p&gt;웹서비스 시스템을 구성할 기술을 선택하였으니, 이제 웹서비스 구축 방법에 대해 알아봅니다.&lt;/p&gt;
+
+&lt;h3&gt;1. 웹 프로젝트를 생성&lt;/h3&gt;
+
+&lt;p&gt;: 저는 Spring Web Maven Project를 생성하였습니다. Eclipse에 STS plugin을 설치하면 쉽게 생성할 수 있습니다.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-02.jpg&quot; alt=&quot;nextree&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림4. Spring Web Maven Project 생성&lt;/p&gt;&lt;/p&gt;
+
+&lt;h3&gt;2. CXF Dependency 추가&lt;/h3&gt;
+
+&lt;p&gt;:  pom.xml 에 CXF관련 dependency를 추가합니다. dependencies 탭에서 Add버튼을 눌러 검색하여 추가하거나, 아래 소스코드를 복사하여 붙인 후 Maven Update를 하면 자동으로 관련 라이브러리들이 다운로드 됩니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    &amp;lt;!-- CXF --&amp;gt;
+    &amp;lt;dependency&amp;gt;
+        &amp;lt;groupId&amp;gt;org.apache.cxf&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;cxf-rt-frontend-jaxws&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;2.7.11&amp;lt;/version&amp;gt;
+    &amp;lt;/dependency&amp;gt;
+    &amp;lt;dependency&amp;gt;
+        &amp;lt;groupId&amp;gt;org.apache.cxf&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;cxf-rt-transports-http&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;2.7.11&amp;lt;/version&amp;gt;
+    &amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;3. Sevlet 설정&lt;/h3&gt;
+
+&lt;p&gt;: web.xml 서버로 들어오는 요청을 CXF-Servlet으로 연결하는 설정을 추가해야 합니다. 기본으로 Dispatcher-Servlet이 추가되어 있다면 이를 삭제하거나, CXF-Servlet을 url pattern으로 구분하여 추가해서 해당 url일 경우에만 CXF로 연결되도록 설정할 수 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    &amp;lt;servlet&amp;gt;
+      &amp;lt;servlet-name&amp;gt;cxf&amp;lt;/servlet-name&amp;gt;
+      &amp;lt;servlet-class&amp;gt;org.apache.cxf.transport.servlet.CXFServlet&amp;lt;/servlet-class&amp;gt;
+      &amp;lt;load-on-startup&amp;gt;1&amp;lt;/load-on-startup&amp;gt;
+    &amp;lt;/servlet&amp;gt;
+    &amp;lt;servlet-mapping&amp;gt;
+      &amp;lt;servlet-name&amp;gt;cxf&amp;lt;/servlet-name&amp;gt;
+      &amp;lt;url-pattern&amp;gt;/*&amp;lt;/url-pattern&amp;gt;
+    &amp;lt;/servlet-mapping&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;4. WebService Annotation을 활용하여 서비스 구현&lt;/h3&gt;
+
+&lt;p&gt;: 웹서비스 구현체에 @WebService Annotation을 붙이고 그 안에 서비스 명, 네임스페이스, Port 명 등 여러 정보들을 원하는대로 설정할 수 있으며, 설정하지 않아도 기본값으로 자동으로 생성되므로 편리합니다. 또한 @WebParam을 서비스 파라미터 타입 앞에 쓰면 XML에 원하는 이름으로 표현할 수 있습니다. 만약 @WebParam을 설정하지 않으면 arg0, arg1… 과 같은 형태로 생성되기 때문에 요청XML을 작성하는데 어려움이 생깁니다. 따라서 정확한 명시를 위해 @WebParam 이름은 반드시 설정하도록 합니다. 아래와 같이 적절한 Annotation을 사용하여 서비스 인터페이스와 구현체 클래스를 생성합니다. 웹서비스 어노테이션에 경고가 없어지지 않는다면, dependency에 javaee-web-api를 설정하여 내려받으면 더욱 편하게 작업하실 수 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    @WebService(endpointInterface = &amp;quot;ws.HelloWs&amp;quot;, serviceName = &amp;quot;HelloWs&amp;quot;, portName=&amp;quot;HelloPort&amp;quot;, targetNamespace=&amp;quot;nextree.co.kr&amp;quot;)
+    public class HelloWsLogic implements HelloWs {
+
+        public String helloWebService(@WebParam(name=&amp;quot;user&amp;quot;) User user) {
+            return user.getName() + &amp;quot;(&amp;quot; + user.getEmail() +&amp;quot;)님 안녕하세요&amp;quot;;
+        }
+    }
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;5. WebService Endpoint Bean 등록&lt;/h3&gt;
+
+&lt;p&gt;: applicationContext.xml 또는 본인이 설정한 Spring Bean Configuration File에 WebService의 Endpoint로 사용할 서비스구현체를 빈으로 등록합니다. 해당 구현체의 위치를 등록하고, 해당 서비스에 접근할 수 있는 url을 address속성에 지정합니다.  JAXWS SOAP 바인딩 설정도 함께 잡아줍니다. 그리고 아래 소스코드처럼 CXF 파일을 import하여 CXF관련 설정을 추가합니다.&lt;br&gt;
+여기서 주의할 점은 지정된 설정파일에 추가해야된다는 점입니다. web.xml에 Application Context File에 대한 어떤 설정도 없다면 기본적으로 applicationContext.xml 파일을 탐색하여 참조하기 때문에, 추가한 파일이 web.xml에 제대로 설정되어 있는지 확인하기시 바랍니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;    &amp;lt;import resource=&amp;quot;classpath:META-INF/cxf/cxf-servlet.xml&amp;quot; /&amp;gt;
+    &amp;lt;import resource=&amp;quot;classpath:META-INF/cxf/cxf.xml&amp;quot; /&amp;gt;
+    &amp;lt;import resource=&amp;quot;classpath:META-INF/cxf/cxf-extension-soap.xml&amp;quot; /&amp;gt;
+
+    &amp;lt;jaxws:endpoint id=&amp;quot;helloWs&amp;quot; implementor=&amp;quot;ws.logic.HelloWsLogic&amp;quot; address=&amp;quot;/helloWs&amp;quot;&amp;gt;
+        &amp;lt;jaxws:binding&amp;gt;
+            &amp;lt;soap:soapBinding style=&amp;quot;document&amp;quot; use=&amp;quot;literal&amp;quot; version=&amp;quot;1.1&amp;quot; /&amp;gt;
+        &amp;lt;/jaxws:binding&amp;gt;
+    &amp;lt;/jaxws:endpoint&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;6. WSDL 확인&lt;/h3&gt;
+
+&lt;p&gt;: 서버를 띄우고, CXF를 통해 자동으로 생성된 wsdl을 확인합니다. Endpoint Bean의 address를 url뒤에 붙이고 “?wsdl”을 덧붙여 익스플로러 URL창에 입력합니다.  그럼 해당 주소에 WSDL이 생성된 것을 확인할 수 있습니다.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-03.jpg&quot; alt=&quot;nextree&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림5. 생성된 wsdl 확인&lt;/p&gt;&lt;/p&gt;
+
+&lt;h3&gt;7. SoapUI로 XML 확인&lt;/h3&gt;
+
+&lt;p&gt;: WebService Publisher는 UI가 없기 때문에 명확한 테스트를 하기 어렵습니다. 물론 개발자가 단위테스트는 진행할 수 있지만, 팀원들이나 현업과 테스트를 공유하기 위해서 Soap UI 웹서비스 테스트 프로그램을 사용하면 WebService Publisher가 제공하는 XML과 입력에 따른 결과도 확인 할 수 있어서 편리합니다. SoapUI는 무료버전과 유료버전을 나누어 배포하기 때문에 무료로도 간편하게 설치할 수 있습니다.(Soap UI 다운로드 URL: &lt;a href=&quot;http://sourceforge.net/projects/soapui/files/&quot;&gt;http://sourceforge.net/projects/soapui/files/&lt;/a&gt;)&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-05.jpg&quot; alt=&quot;nextree&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림6. SoapUI 프로젝트 생성&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;SoapUI는 wsdl 주소만 입력하여 편리하게 프로젝트를 생성할 수 있습니다. 새로운 프로젝트가 생성되면 메소드별로 테스트 요청파일이 자동 생성됩니다.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/eykim-spring-webservice-cxf-20140807-04.jpg&quot; alt=&quot;nextree&quot;&gt;&lt;br&gt;
+&lt;p align=&quot;center&quot;&gt;그림7. Soap UI 테스트 화면 구성&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;요청할 서비스를 선택하고 XML에 “?”로 명시된 부분에 요청할 값을 입력합니다. 그 후 좌측 상단에 Submit버튼을 클릭하면 응답 XML이 출력됩니다. 또한 응답시간까지 확인할 수 있기 때문에 성능검증에도 효율적인 툴입니다.&lt;/p&gt;
+
+&lt;p&gt;여기까지 WebService Publisher 구현하는 방법에 대해 알아봤습니다. 프레임워크와 라이브러리를 활용하여 쉽게 구현할 수 있습니다.&lt;br&gt;
+Spring Framework는 DI/IOC 기능을 통해 빈 설정 파일에 웹서비스 Endpoint만 정의해주면 구현체에 웹서비스 설정을 주입해주기 때문에, WebService 구현이 간결해지도록 합니다. 또한 CXF와 같은 WebService Framework는 편리한 라이브러리를 제공하고 wsdl를 자동 생성합니다. JAXB는 자바의 객체를 XML로 매핑하여 Client에게 전송해주고, Client가 보낸 요청 XML을 다시 자바 객체로 매핑해줍니다. 이처럼 웹서비스는 직접 구현해보면 실행원리를 쉽게 이해할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;프로젝트에 참여하면 시스템의 설정보다는 비즈니스 로직을 구현하는 시간이 많습니다. 따라서 자신이 참여한 프로젝트라도 시스템의 구성을 정확히 모르는 경우도 발생합니다. 저도 웹서비스 프로젝트에 참여했었지만, 이렇게 다시 되돌아보니 배운 점들이 많습니다. 원리와 구성을 알면 사용법은 자연스럽게 익힐 수 있다는 것을 깨달았습니다.&lt;/p&gt;
+
+&lt;p&gt;이 글이 웹서비스를 공부하시는 분들께 작은 도움이 되기를 바랍니다. 끝까지 읽어주셔서 감사합니다.&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;-참고 문서 &lt;br&gt;
+CXF : 스프링 사용 (&lt;a href=&quot;http://cxf.apache.org/docs/writing-a-service-with-spring.html&quot;&gt;http://cxf.apache.org/docs/writing-a-service-with-spring.html&lt;/a&gt;)&lt;br&gt;&lt;br&gt;
+CXF : JAXB 데이터바인딩 설정 (&lt;a href=&quot;http://cxf.apache.org/docs/jaxb.html&quot;&gt;http://cxf.apache.org/docs/jaxb.html&lt;/a&gt;)&lt;br&gt;&lt;br&gt;
+JAXB설정 (&lt;a href=&quot;http://confluence.highsource.org/display/HJ3/Apache+CXF+Tutorial+-+Building+JAX-WS,+JAXB+and+JPA-based+web+service+with+Apache+CXF,+Spring+and+Hyperjaxb3&quot;&gt;http://confluence.highsource.org/display/HJ3/Apache+CXF+Tutorial+-+Building+JAX-WS,+JAXB+and+JPA-based+web+service+with+Apache+CXF,+Spring+and+Hyperjaxb3&lt;/a&gt;)&lt;br&gt;&lt;br&gt;
+Spring으로 Soap WebService구현하기 (&lt;a href=&quot;http://www.madbit.org/blog/programming/447/soap-web-services-with-spring/&quot;&gt;http://www.madbit.org/blog/programming/447/soap-web-services-with-spring/&lt;/a&gt;)&lt;br&gt;&lt;br&gt;
+SoapUI (&lt;a href=&quot;http://www.soapui.org/&quot;&gt;http://www.soapui.org/&lt;/a&gt;)&lt;br&gt;&lt;br&gt;
+Spring-WS (&lt;a href=&quot;http://projects.spring.io/spring-ws/&quot;&gt;http://projects.spring.io/spring-ws/&lt;/a&gt;)&lt;br&gt;&lt;br&gt;
+CXF vs AXIS vs Spring-WS (&lt;a href=&quot;http://architects.dzone.com/articles/apache-cxf-vs-apache-axis-vs&quot;&gt;http://architects.dzone.com/articles/apache-cxf-vs-apache-axis-vs&lt;/a&gt;)&lt;br&gt;&lt;br&gt;
+CXF 샘플 코드 (&lt;a href=&quot;https://github.com/kronleuchter85/cxf-samples/blob/master/java_first_spring_support/pom.xml&quot;&gt;https://github.com/kronleuchter85/cxf-samples/blob/master/java_first_spring_support/pom.xml&lt;/a&gt;)&lt;/p&gt;
+</description>
+        <pubDate>Sun, 10 Aug 2014 00:00:00 +0900</pubDate>
+        <link>http://wooseok7.github.io//cxf/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//cxf/</guid>
+      </item>
+    
+      <item>
+        <title>SpringMVC에서 Ajax와 JSON</title>
+        <description>&lt;h1&gt;SpringMVC에서 Ajax와 JSON&lt;/h1&gt;
+
+&lt;p&gt;Posted by 서 지수 in 배움터 - 열공   on Aug 10th, 2014 &lt;/p&gt;
+
+&lt;p&gt;이전에 포스팅한 글에서 언급했듯이 Ajax는 서버와 비동기식으로 (동기식으로도 가능 함) 통신 하는 방법중에 하나입니다. 이번 글에서는 기존 글들과는 조금 다르게 접근하여 통신시 서버에서의 Data 셋팅방법에 대해 알아봅니다. JavaScript(jQuery) 관점의 Ajax는 넥스트리 블로그 &lt;a href=&quot;http://www.nextree.co.kr/p9521/&quot;&gt;JavaScript, jQuery 그리고 Ajax&lt;/a&gt;를 참고해주세요.&lt;/p&gt;
+
+&lt;p&gt;Ajax통신에 있어서 데이터 전송형식에는 여러가지(CSV, XML, Json 등)가 있습니다. 하지만, 이번 글에서는 Json형식의 데이터 전송방식을 다루겠습니다. 그리고 이후에 설명드릴 방법중 일부는 Spring MVC 뿐만 아니라 다른 프레임워크(jsp/Sevlet포함)에서도 쓰일 수 있다는 것을 알려드립니다. 그럼 이제부터 그 방법들에 대해서 살펴봅니다.  아래 그림은 실행결과입니다.&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/08/jsseo-spring-ajax-20140807-03.jpg.jpg&quot; alt=&quot;nextree&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;h4&gt;1. response객체에 문자열 담기&lt;/h4&gt;
+
+&lt;p&gt;첫번째로 살펴볼 방법은 HttpServletResponse 객체에 문자열을 담아 보내는 방법입니다. Servlet기반인 HttpServletResponse 객체를 사용하므로 Spring MVC뿐아니라 Servlet기반의 타 프레임워크에서도 사용가능하다는 장점이 있습니다. 하지만, 단순히 문자열을 사용자가 임의로 Json형식으로 작성하는 만큼 오탈자등을 고려해야하는 번거로움이 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Script
+$(&amp;quot;#joinOk&amp;quot;).bind(&amp;quot;click&amp;quot;,function(){
+    $.ajax({
+        url : contextPath+&amp;quot;/ajax.seo&amp;quot;,
+        type: &amp;quot;get&amp;quot;,
+        data : { &amp;quot;id&amp;quot; : $(&amp;quot;#id&amp;quot;).val() },
+        success : function(responseData){
+            $(&amp;quot;#ajax&amp;quot;).remove();
+            var data = JSON.parse(responseData);
+            if(!data){
+                alert(&amp;quot;존재하지 않는 ID입니다&amp;quot;);
+                return false;
+            }
+            var html = &amp;#39;&amp;#39;;
+            html += &amp;#39;&amp;lt;form class=&amp;quot;form-signin&amp;quot; action=&amp;quot;&amp;quot; id=&amp;quot;ajax&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;이름&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot;  name=&amp;quot;name&amp;quot; value=&amp;quot;&amp;#39;+data.name+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;아이디&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; name=id&amp;quot; value=&amp;quot;&amp;#39;+data.id+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;이메일&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot;  name=&amp;quot;email&amp;quot; value=&amp;quot;&amp;#39;+data.email+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;비밀번호&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; name=&amp;quot;password&amp;quot; value=&amp;quot;&amp;#39;+data.password+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;&amp;lt;/form&amp;gt;&amp;#39;;
+            $(&amp;quot;#container&amp;quot;).after(html);
+        }
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Controller
+@RequestMapping(value= &amp;quot;/ajax.seo&amp;quot;, method=RequestMethod.GET)
+public void AjaxView(
+        @RequestParam(&amp;quot;id&amp;quot;) String id,
+        HttpServletResponse response)  {
+    String personJson;
+
+    SocialPerson person = dao.getPerson(id);
+    if(person != null){
+        personJson = &amp;quot;{\&amp;quot;id\&amp;quot;:\&amp;quot;&amp;quot;+person.getId()
+                    +&amp;quot;\&amp;quot;,\&amp;quot;name\&amp;quot;:\&amp;quot;&amp;quot;+person.getName()
+                    +&amp;quot;\&amp;quot;,\&amp;quot;password\&amp;quot;:\&amp;quot;&amp;quot;+person.getPassword()
+                    +&amp;quot;\&amp;quot;,\&amp;quot;email\&amp;quot;:\&amp;quot;&amp;quot;+person.getEmail()+&amp;quot;\&amp;quot;}&amp;quot;;
+    }
+    else{
+        personJson = &amp;quot;null&amp;quot;;
+    }
+    try {
+        response.getWriter().print(personJson);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }   
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;위 코드는 HttpServeltResponse 객체 활용에 대한 간단한 예제 코드입니다. Script코드에서 서버(Controller)에 input태그에 입력된  id값을  전송하면  Controller에서는 해당 데이터를 parameter로 받고 그 id값으로 DB를 조회합니다. 조회 성공시 개발자가 문자열을 Json형식으로 맞추어 주며, 조회 실패시 “null”이라는 문자열을 넘겨줍니다. 그리고 response객체의 getWriter메소드를 통하여 PrintWriter 객체를 가져오고 print메소드를 사용하여 Script로 해당 문자열을 전송합니다.&lt;br&gt;
+그렇게 되면 ajax success함수 responseData에 서버에서 넘겨준 문자열이 저장됩니다. responseData는 문자열 이므로 JSON.parse함수를 통하여 json객체로 파싱을 해준 후 구현합니다.&lt;/p&gt;
+
+&lt;h4&gt;2. ObjectMapper&lt;/h4&gt;
+
+&lt;p&gt;두번째로 살펴볼 방법은 ObjectMapper객체를 사용하는 방법입니다. ObjectMapper 객체를 사용하여도 HttpServletResponse 객체를 사용합니다. 하지만 ObjectMapper객체를 사용하게되면 위 방법처럼 문자열을 개발자가 작성할 필요없이 해당 객체를 Json형식의 문자열로 바꾸어주게 되어 개발자가 좀 더 간단하게 구현할 수 있습니다.&lt;br&gt;
+ObjectMapper 객체를 사용 하기위해서는 구현에 앞서 jackson-databind 라이브러리를 프로젝트에 추가해야 합니다. jackson-databind라이브러리를 다운받아  lib폴더에 추가 시켜주거나 Maven 프로젝트 일경우 pom.xml경우에 아래와 같이 dependency 해주면 됩니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;com.fasterxml.jackson.core&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;jackson-databind&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;버전&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;위의 방법대로 라이브러리를 추가하시면 ObjectMapper객체를 사용할 수 있습니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Script
+$(&amp;quot;#joinOk&amp;quot;).bind(&amp;quot;click&amp;quot;,function(){
+    $.ajax({
+        url : contextPath+&amp;quot;/ajax.seo&amp;quot;,
+        type: &amp;quot;get&amp;quot;,
+        data : { &amp;quot;id&amp;quot; : $(&amp;quot;#id&amp;quot;).val() },
+        success : function(responseData){
+            $(&amp;quot;#ajax&amp;quot;).remove();
+            var data = JSON.parse(responseData);
+            if(!data){
+                alert(&amp;quot;존재하지 않는 ID입니다&amp;quot;);
+                return false;
+            }
+            var html = &amp;#39;&amp;#39;;
+            html += &amp;#39;&amp;lt;form class=&amp;quot;form-signin&amp;quot; action=&amp;quot;&amp;quot; id=&amp;quot;ajax&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;이름&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot;  name=&amp;quot;name&amp;quot; value=&amp;quot;&amp;#39;+data.name+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;아이디&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; name=id&amp;quot; value=&amp;quot;&amp;#39;+data.id+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;이메일&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot;  name=&amp;quot;email&amp;quot; value=&amp;quot;&amp;#39;+data.email+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;비밀번호&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; name=&amp;quot;password&amp;quot; value=&amp;quot;&amp;#39;+data.password+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+            html += &amp;#39;&amp;lt;/form&amp;gt;&amp;#39;;
+            $(&amp;quot;#container&amp;quot;).after(html);
+        }
+    });
+});
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Controller
+@RequestMapping(value= &amp;quot;/ajax.seo&amp;quot;, method=RequestMethod.GET)
+public void AjaxView(
+        @RequestParam(&amp;quot;id&amp;quot;) String id,
+        HttpServletResponse response)  {
+    ObjectMapper mapper = new ObjectMapper();
+
+    SocialPerson person = dao.getPerson(id);
+    try {
+        response.getWriter().print(mapper.writeValueAsString(person));
+    } catch (IOException e) {
+        e.printStackTrace();
+    }   
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;위 코드는 ObjcetMapper객체 활용의 간단한 예제코드입니다. Script코드에서 서버(Controller)에 input태그에 입력된  id값을  전송하면  Controller에서는 해당 데이터를 parameter로 받고 그 id값으로 DB를 조회합니다. ObjcetMapper객체의 writeValueAsString메소드를 사용하여 Person객체를 Json형식의 문자열로 만듭니다. 그리고 이후에 위의 방법과 마찬가지로 response객체를 활용하여 문자열을 ajax success함수로 전송합니다. responseData는 서버에서 전송된 Json형식의 문자열 이므로 JSON.parse 함수를 통하여 Json객체로 파싱을 해준 후 구현합니다.&lt;/p&gt;
+
+&lt;h4&gt;3. @ResponseBody&lt;/h4&gt;
+
+&lt;p&gt;세번째로 살펴볼 방법은 ResponseBody 어노테이션을 사용하는 방법입니다. 메소드의 return형 앞에 @ResponseBody를 붙여서 사용하게되면 해당객체가 자동으로 Json객체로 변환되어 반환됩니다. 구현에 앞서 @ResponseBody 환경을 설정하는 방법을 알아봅니다.&lt;/p&gt;
+
+&lt;p&gt;첫째, jackson-mapper-asl 라이브러리를 다운로드하여 lib폴더에 추가시켜주거나  Maven 프로젝트 일경우 pom.xml경우에 아래와 같이 dependency 해주면 됩니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;dependency&amp;gt;
+       &amp;lt;groupId&amp;gt;org.codehaus.jackson&amp;lt;/groupId&amp;gt;
+       &amp;lt;artifactId&amp;gt;jackson-mapper-asl&amp;lt;/artifactId&amp;gt;
+       &amp;lt;version&amp;gt;버전&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;둘째, servlet xml에 아래와 같이 어노테이션을 설정해줍니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;annotation-driven /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;위에서 @ResponseBody방식을 사용하 기 위한 환경 설정법에 대해서 알아보았습니다.  아래는 @ResponseBody방식의 실제 Script와 Java Controller 구현 코드입니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Script
+$(&amp;quot;#joinOk&amp;quot;).bind(&amp;quot;click&amp;quot;,function(){
+        $.ajax({
+            url : contextPath+&amp;quot;/ajax.seo&amp;quot;,
+            type: &amp;quot;get&amp;quot;,
+            data : { &amp;quot;id&amp;quot; : $(&amp;quot;#id&amp;quot;).val() },
+            success : function(data){
+                $(&amp;quot;#ajax&amp;quot;).remove();
+                alert(data);
+                if(!data){
+                    alert(&amp;quot;존재하지 않는 ID입니다&amp;quot;);
+                    return false;
+                }
+                var html = &amp;#39;&amp;#39;;
+                html += &amp;#39;&amp;lt;form class=&amp;quot;form-signin&amp;quot; action=&amp;quot;&amp;quot; id=&amp;quot;ajax&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;이름&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot;  name=&amp;quot;name&amp;quot; value=&amp;quot;&amp;#39;+data.name+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;아이디&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; name=id&amp;quot; value=&amp;quot;&amp;#39;+data.id+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;이메일&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot;  name=&amp;quot;email&amp;quot; value=&amp;quot;&amp;#39;+data.email+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;비밀번호&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; name=&amp;quot;password&amp;quot; value=&amp;quot;&amp;#39;+data.password+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;&amp;lt;/form&amp;gt;&amp;#39;;
+                $(&amp;quot;#container&amp;quot;).after(html);
+            }
+        });
+
+    });
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Controller
+@RequestMapping(value= &amp;quot;/ajax.seo&amp;quot;, method=RequestMethod.GET)
+public @ResponseBody SocialPerson AjaxView(
+        @RequestParam(&amp;quot;id&amp;quot;) String id)  {
+
+    SocialPerson person = dao.getPerson(id);
+    return person;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;위 코드는 @ResponseBody방식에 대한 간단한 예제 코드입니다. Script코드에서 서버(Controller)에 input태그에 입력된  id값을  전송하면  Controller에서는 해당 데이터를 parameter로 받고 그 id값으로 DB를 조회합니다.  앞서 말하였듯 return형 앞에 @ResponseBody를 사용하고 해당 객체를 return해주기만 하면 ajax success함수의 data에 person객체가 Json객체로 변환 후 전송되어 파싱이 필요없습니다..&lt;/p&gt;
+
+&lt;h4&gt;4. jsonView&lt;/h4&gt;
+
+&lt;p&gt;마지막으로 살펴볼 방법은 jsonView를 사용 하는 방법입니다. 구현에 앞서 환경 설정을 해주어야 하는데, 설정방법은 다음과 같습니다.&lt;/p&gt;
+
+&lt;p&gt;첫째, json-lib-ext-spring 라이브러리를 다운받아 lib 폴더에 추가 시켜주거나 Maven 프로젝트 일경우 pom.xml경우에 아래와 같이 dependency 해주면 됩니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;dependency&amp;gt;
+    &amp;lt;groupId&amp;gt;net.sf.json-lib&amp;lt;/groupId&amp;gt;
+    &amp;lt;artifactId&amp;gt;json-lib-ext-spring&amp;lt;/artifactId&amp;gt;
+    &amp;lt;version&amp;gt;버전&amp;lt;/version&amp;gt;
+&amp;lt;/dependency&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;둘째, servlet xml에 아래와 같이  bean객체를 설정 후 viewResolver를 설정 해줍니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;beans:bean id=&amp;quot;jsonView&amp;quot; class=&amp;quot;net.sf.json.spring.web.servlet.view.JsonView&amp;quot;/&amp;gt; 
+&amp;lt;beans:bean id=&amp;quot;viewResolver&amp;quot; class=&amp;quot;org.springframework.web.servlet.view.BeanNameViewResolver&amp;quot;&amp;gt;
+    &amp;lt;beans:property name=&amp;quot;order&amp;quot; value=&amp;quot;1&amp;quot;&amp;gt;&amp;lt;/beans:property&amp;gt;
+&amp;lt;/beans:bean&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;위에서 jsonView방식을 사용하 기 위한 환경 설정법에 대해서 알아보았습니다.  아래는 jsonView방식의 실제 Script*와* Java Controller 구현 코드입니다.&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;// Script
+$(&amp;quot;#joinOk&amp;quot;).bind(&amp;quot;click&amp;quot;,function(){
+        $.ajax({
+            url : contextPath+&amp;quot;/ajax.seo&amp;quot;,
+            type: &amp;quot;get&amp;quot;,
+            data : { &amp;quot;id&amp;quot; : $(&amp;quot;#id&amp;quot;).val() },
+            success : function(responseData){
+                var data = responseData.person;
+                $(&amp;quot;#ajax&amp;quot;).remove();
+                if(!data){
+                    alert(&amp;quot;존재하지 않는 ID입니다&amp;quot;);
+                    return false;
+                }
+                var html = &amp;#39;&amp;#39;;
+                html += &amp;#39;&amp;lt;form class=&amp;quot;form-signin&amp;quot; action=&amp;quot;&amp;quot; id=&amp;quot;ajax&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;이름&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot;  name=&amp;quot;name&amp;quot; value=&amp;quot;&amp;#39;+data.name+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;아이디&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; name=id&amp;quot; value=&amp;quot;&amp;#39;+data.id+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;이메일&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot;  name=&amp;quot;email&amp;quot; value=&amp;quot;&amp;#39;+data.email+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;비밀번호&amp;lt;input type=&amp;quot;text&amp;quot; class=&amp;quot;form-control&amp;quot; name=&amp;quot;password&amp;quot; value=&amp;quot;&amp;#39;+data.password+&amp;#39;&amp;quot;&amp;gt;&amp;#39;;
+                html += &amp;#39;&amp;lt;/form&amp;gt;&amp;#39;;
+                $(&amp;quot;#container&amp;quot;).after(html);
+            }
+        });
+
+    });
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;//Controller
+@RequestMapping(value= &amp;quot;/ajax.seo&amp;quot;, method=RequestMethod.GET)
+public ModelAndView AjaxView( @RequestParam(&amp;quot;id&amp;quot;) String id)  {
+    ModelAndView mav= new ModelAndView();
+
+    SocialPerson person = dao.getPerson(id);
+    mav.addObject(&amp;quot;person&amp;quot;,person);
+    mav.setViewName(&amp;quot;jsonView&amp;quot;);
+    return mav;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;위 코드는 jsonView방식에 대한 간단한 예제 코드입니다. Script코드에서 서버(Controller)에 input태그에 입력된  id값을  전송하면  Controller에서는 해당 데이터를 parameter로 받고 그 id값으로 DB를 조회합니다. 조회결과가 있으면 해당 회원(Person) 객체를 ModelandView객체에 addObject메소드를 사용하여 넣어주고, 조회결과가 없으면 null이 됩니다. 그리고 마지막으로 view명을 “jsonView”로 하면 ajax success함수 responseData에  ModelandView 객체가 Json객체로 파싱되어서 넘어옵니다. 즉, ModelandView 객체에 맵 형식(키,밸류)으로 Person객체를 입력하였으므로 responseData가 아닌 responseData.person이 Person객체가 됩니다. 넘어온 Person 객체는 json형식이기 때문에 속성 값은 data.id, data.name 등으로 구현이 됩니다.&lt;/p&gt;
+
+&lt;h4&gt;마치며&lt;/h4&gt;
+
+&lt;p&gt;지금까지 Spring MVC에서 data를 Json형식으로 변환하는 방법에 대해 알아보았습니다. 구현에는 정답이 없다고 생각합니다. 한 가지 결과에 도달하기에는 무수히 많은 길들과 방법들이 존재하는 것 같습니다. 제가 알고있는 정보들을 공유하며 모든분들께 도움이 될 수 없겠지만 몇몇분들께는 도움이 되었으면 좋겠습니다. 부족한 글 봐주셔서 감사합니다.&lt;/p&gt;
+
+&lt;h4&gt;참고사이트&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://hmkcode.com/java-servlet-send-receive-json-using-jquery-ajax/&quot;&gt;http://hmkcode.com/java-servlet-send-receive-json-using-jquery-ajax/&lt;/a&gt; - ObjectMapper&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://hmkcode.com/spring-mvc-json-json-to-java/&quot;&gt;http://hmkcode.com/spring-mvc-json-json-to-java/&lt;/a&gt;  – @ResponseBody&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://a07274.tistory.com/209&quot;&gt;http://a07274.tistory.com/209&lt;/a&gt; - jsonView&lt;/p&gt;
+</description>
+        <pubDate>Sun, 10 Aug 2014 00:00:00 +0900</pubDate>
+        <link>http://wooseok7.github.io//Spring%20mvc%20Ajax%20Json/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//Spring%20mvc%20Ajax%20Json/</guid>
+      </item>
+    
+      <item>
+        <title>“UML = 클래스 다이어그램과 소스코드 매핑”</title>
+        <description>&lt;p&gt;불과 몇 년 되지 않은 학생 시절… 처음으로 UML을 접했고, UML의 기초적인 그리는 법과 사용법을 배웠습니다. 개인적으로 쉽지 않은 수업이었는데 그 중 가장 많이 사용되는 클래스 다이어그램에서 클래스간의 relationship(관계)가 제일 어려웠습니다.Generalization(일반화)과 Realization(실체화)은 명확하기 때문에 이해하는데 어려움이 없었고 Dependency(의존) 부터 조금 어려워 지더니 Association(연관)과 Aggregation(집합), Composition(합성) 3종 세트에 가서는 머리가 복잡해졌습니다. 특히 Aggregation과 Composition이 논리적으로 약하고 강한 집합이라는 차이는 알겠지만 ‘그래서 어떤 명확한 차이점이 발생하는 거지? 저걸 코드로 만들 때는 어떻게 만들어야 하는 거지?’라는 생각과 함께 잘 와 닿지 않았습니다.&lt;br&gt;
+그래서 2013년 9월에 진행 됐던 &lt;/p&gt;
+
+&lt;p&gt;’2013 넥스트리 신입사원 인큐베이션 세미나’에서 발표 주제를 UML 클래스 다이어그램으로 정하고 그 동안 배운 것들과 추가로 공부를 더한 것들로 발표를 했고, 많은 도움이 됐던 시간이었습니다. 세미나 발표 후 몇가지 내용에 대한 아쉬움이 있었는데, 이번 기회에 그 아쉬움과 부족했던 부분을 보완하여 글로 정리하게 되었습니다. UML 클래스 다이어그램의 기본적인 요소들과 클래스간의 관계, 그리고 제가 제일 어려웠던 이 관계들을 어떻게 코드로 나타내어야 할지에 대해서 썼으며 언어는 Java 기준으로 하였습니다. &lt;a href=&quot;http://www.nextree.co.kr/p4738&quot;&gt;2013 신입사원 인큐베이션 세미나&lt;/a&gt;에 대한 글도 Nextree 홈블로그에서 보실 수 있습니다.&lt;/p&gt;
+
+&lt;h2&gt;1. UML&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;UML&lt;/strong&gt;이란 &lt;strong&gt;Unified Modeling Language&lt;/strong&gt;의 약자로 1997년 OMG(Object Management Group)에서 표준으로 채택한 통합모델링언어 입니다. 즉, 모델을 만드는 표준언어인 것입니다. 모델이란 것은 어떤 것을 실제로 만들 때 이렇게 만들면 잘 작동할지 미리 검증해 보는 것이며 실제 물건을 만드는 비용보다 비용이 훨씬 적을 경우에 모델을 만들어 설계를 검사합니다.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;소프트웨어&lt;/strong&gt;에서의 모델은 건축, &lt;strong&gt;항공&lt;/strong&gt; 등의 모델과는 좀 다른 면이 있습니다. 건물을 짓고, 항공기를 만드는 것과 설계를 그리고 만드는 것은 비용의 엄청난 차이가 있습니다. 하지만 UML 다이어그램을 그리며 모델을 만드는 일은 개발보다 비용이 적긴 하지만 훨씬 적게 드는 것이 아니며 때로는 오히려 개발보다 비용이 더 많이 들 수도 있습니다. 그래서 UML은 시험해 볼 구체적인 것이 있고, 그것을 코드로 시험해 보는 것보다 UML로 시험해 보는 쪽이 비용이 덜 들 때 주로 사용합니다. 이러한 목적으로 UML을 사용하는 유형에는 다음 3가지 정도가 있습니다.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;   + 다른 사람들과의 의사소통 또는 설계 논의
+   + 전체 시스템의 구조 및 클래스의 의존성 파악
+   + 유지보수를 위한 설계의 back-end 문서
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt; UML을 그리는데 가장 좋은 도구는 종이와 펜이라는 말이 있듯이 습관적으로 만드는 게 아니라 필요에 의해 만드는 것이 가장 좋은 것 같습니다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Class Diagram (클래스 다이어그램)&lt;/h2&gt;
+
+&lt;p&gt;&lt;center&gt;&lt;img src= http://www.nextree.co.kr/wp-content/uploads/2014/02/%EA%B7%B8%EB%A6%BC1-UML-%EC%A2%85%EB%A5%98.png width=&quot;500px&quot; height=&quot;300px&quot;&gt;&lt;/img&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://www.nextree.co.kr/wp-content/uploads/2014/02/%EA%B7%B8%EB%A6%BC1-UML-%EC%A2%85%EB%A5%98.png&quot; alt=&quot;&quot; title=&quot;&amp;quot; &amp;quot;width:200px; height:100px; float:right&quot;&gt;   &lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;[그림 1] UML 다이어그램의 종류, 출처: &lt;a href=&quot;http://www.ask.com/wiki/Unified_Modeling_Language#UML_2.x&quot;&gt;www.ask.com/wiki/Unified_Modeling_Language#UML_2.x&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;*목록&lt;br&gt;&lt;br&gt;
+-목록&lt;br&gt;&lt;br&gt;
+*목록  &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;목록&lt;/li&gt;
+&lt;li&gt;목차&lt;/li&gt;
+&lt;li&gt;될까??
+
+&lt;ul&gt;
+&lt;li&gt;혼합&lt;/li&gt;
+&lt;li&gt;혼합&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;  `각각의 줄을 2개 이상` 
+  스페이스로 시작하면
+  글을 타이핑하는 그대로 정확히
+  보여줄수 있다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h5&gt;제목 5&lt;/h5&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;정의목록
+: 정의란 오픈소스 저작물을
+관리하는 시스템임
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h1&gt;THIS IS A H1&lt;/h1&gt;
+
+&lt;h2&gt;THIS IS A H1&lt;/h2&gt;
+
+&lt;h1&gt;THIS IS A H1&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;일&lt;/li&gt;
+&lt;li&gt;삼&lt;/li&gt;
+&lt;li&gt;이&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;UML은 구조 다이어그램 7개, 행위 다이어그램 7개로 총 14종류의 다이어그램이 있습니다. 구조 다이어그램은 시스템의 개념, 관계 등의 측면에서 요소들을 나타내고 각 요소들의 정적인 면을 보기 위한 것이고 행위 다이어그램은 각 요소들 혹은 요소들간의 변화나 흐름, 주고받는 데이터 등의 동작을 보기 위한 것으로, 클래스 다이어그램은 구조 다이어그램에 해당합니다. 클래스 다이어그램은 클래스 내부의 정적인 내용이나 클래스 사이의 관계를 표기하는 다이어그램으로 시스템의 일부 또는 전체의 구조를 나타낼 수 있습니다. 클래스 다이어그램은 의존 관계를 명확히 보게 해주며, 순환 의존이 발생하는 지점을 찾아내서 어떻게 이 순환 고리를 깨는 것이 가장 좋은지 결정할 수 있게 해줍니다.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;목적&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;별&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;클래스&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;다이어그램&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nextree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;co&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uploads&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;02&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;BC2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ED&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;81&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;98&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;B&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;96&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;90&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+
+
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;그림&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;목적&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;별&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;클래스&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;다이어그램&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;UML은 목적에 따라 다르게 사용되는데, 크게 3가지로 개념, 명세, 구현의 차원들 입니다.먼저 개념 차원의 UML은 문제 도메인의 구조를 나타내며 사람이 풀고자 하는 문제 도메인 안에 있는 개념과 추상적 개념을 기술하기 위한 것입니다. 이것은 소스코드와 관계가 그렇게 깊지 않으며 오히려 사람의 자연언어와 더 관련이 있습니다. 또한 의미론적(언어의 뜻을 규정하는) 규칙에 그다지 얽매이지 않으며, 따라서 의미하는 바도 모호하거나 해석에 따라 달라질 수 있는 부분이 존재합니다.&lt;br&gt;
+반면, 명세와 구현 차원의 UML은 소프트웨어의 설계 혹은 완성된 소프트웨어의 구현 설명 목적 등으로 사용하며 설계를 해서 소스코드로 바꾸거나 구현 된 소스코드를 설명하려고 사용하기 때문에 소스코드와 관계가 깊습니다. 이 두 차원의 클래스 다이어그램은 제약이 많아서 반드시 일정한 규칙과 의미론을 지켜야 합니다. 또한 모호성이 거의 없도록 하고 형식도 최대한 맞춰야 합니다.&lt;br&gt;
+앞으로 나올 내용들은 구조 다이어그램 중 하나인 클래스 다이어그램이며 그 중에서도 개념 차원은 배제하고 소스코드와 관계가 깊은 명세, 구현 차원에 해당하는 클래스 다이어그램만으로 한정 지어 소스코드와 어떻게 연관 되는지 이해해 보도록 하겠습니다. 따라서 개념 차원의 클래스 다이어그램과는 조금 다른 부분이 있을 수 있습니다.&lt;/p&gt;
+
+&lt;h2&gt;클래스 다이어그램의 요소(Element)&lt;/h2&gt;
+
+&lt;p&gt;&lt;code&gt;Class (클래스)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;클래스는 보통 3개의 compartment(구획)으로 나누어 클래스의 이름, 속성, 기능을 표기합니다. 속성과 기능은 옵션으로 생략이 가능하지만 이름은 필수로 명시해야 합니다.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;클래스&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nextree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;co&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uploads&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;03&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;BC3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ED&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;81&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;98&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;그림&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;].&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;클래스&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;클래스의 세부사항은 필드와 메서드의 Access modifier(접근제한자), 필드명(메서드명), 데이터타입, parameter(매개변수), 리턴 타입 등을 나타낼 수 있습니다. 클래스의 세부사항들을 상세하게 적는 것이 유용할 때도 있지만, UML 다이어그램은 필드나 메서드를 모두 선언하는 곳이 아니기 때문에 다이어그램을 그리는 목적에 필요한 것만 사용하는 것이 좋습니다. 추가로 보통 3개의 구획(compartment)을 사용 하지만 다른 미리 정의되거나 사용자 정의 된 모델 속성(비즈니스 룰, 책임, 처리 이벤트, 발생된 예외 등)을 나타내기 위한 추가 구획도 사용할 수 있다고 합니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;Stereo Type (스테레오 타입)&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;스테레오 타입이란 UML에서 제공하는 기본 요소 외에 추가적인 확장요소를 나타내는 것으로 쌍 꺾쇠와 비슷하게 생긴 길러멧(guillemet, « ») 사이에 적습니다. 이 길러멧이란 기호는 쌍 꺾쇠와는 좀 다른 것으로 폰트 크기보다 작습니다. 종이나 화이트보드에 그릴 때는 상관없지만 공식적인 문서라면 이 기호를 구분해서 사용하는 것이 좋을 것 같습니다.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;o&quot;&gt;![&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;스테레오&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;타입&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;http&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;//&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;www&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;nextree&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;co&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;wp&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uploads&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2014&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;mo&quot;&gt;03&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EA&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;B8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;BC4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ED&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;85&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;C&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EB&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;88&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;98&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;A4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;ED&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;83&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;EC&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;E&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;85&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;png&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;그림&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;스테레오&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;타입&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;위의 다이어그램은 인터페이스와 유틸리티 클래스를 표현하고 있으며 필드, 메소드 밑의 밑줄은 static(정적)필드 또는 메서드를, {readOnly}는 final 키워드를 사용하는 상수를 의미합니다. 스테레오 타입으로 많이 사용되는 것은 «interface», «utility», «abstract», «enumeration» 등이 있습니다.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 08 Mar 2014 23:10:17 +0900</pubDate>
+        <link>http://wooseok7.github.io//UML%20Class%20Diagram/</link>
+        <guid isPermaLink="true">http://wooseok7.github.io//UML%20Class%20Diagram/</guid>
       </item>
     
   </channel>

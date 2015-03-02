@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    <title>SpringMVC에서 Ajax와 JSON – Namoosori’s home blog – One step Ahead</title>
+
+    <meta name="author" content="Namoosori’s home blog" />
+    <meta name="description" content="One step Ahead">
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/theme20/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Namoosori’s home blog - One step Ahead" href="/theme20/feed.xml" />
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+    
+    <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
+    <!-- tag, category search -->
+    <script defer src="/js/alexpearce.js"></script>
+
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/theme20/" class="site-avatar"><img src="https://raw.githubusercontent.com/Wooseok7/theme20/gh-pages/Nextree%20CI_enlarge.png" /></a>
+          
+          <div class="site-info">
+            <h1 class="site-name"><a href="/theme20/">Namoosori’s home blog</a></h1>
+            <p class="site-description">One step Ahead</p>
+          </div>
+          
+          <nav>
+            <a href="/theme20/about/">About</a>
+            <a href="/theme20/categories">Categories</a>     
+            <a href="/theme20/archive/">Archive</a>
+            <a href="/theme20/tags/">Tags</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <article class="post">
+  <h1>SpringMVC에서 Ajax와 JSON</h1>
+
+  <div class="entry">
+    <h1>SpringMVC에서 Ajax와 JSON</h1>
+
+<p>Posted by 서 지수 in 배움터 - 열공   on Aug 10th, 2014 </p>
+
+<p>이전에 포스팅한 글에서 언급했듯이 Ajax는 서버와 비동기식으로 (동기식으로도 가능 함) 통신 하는 방법중에 하나입니다. 이번 글에서는 기존 글들과는 조금 다르게 접근하여 통신시 서버에서의 Data 셋팅방법에 대해 알아봅니다. JavaScript(jQuery) 관점의 Ajax는 넥스트리 블로그 <a href="http://www.nextree.co.kr/p9521/">JavaScript, jQuery 그리고 Ajax</a>를 참고해주세요.</p>
+
+<p>Ajax통신에 있어서 데이터 전송형식에는 여러가지(CSV, XML, Json 등)가 있습니다. 하지만, 이번 글에서는 Json형식의 데이터 전송방식을 다루겠습니다. 그리고 이후에 설명드릴 방법중 일부는 Spring MVC 뿐만 아니라 다른 프레임워크(jsp/Sevlet포함)에서도 쓰일 수 있다는 것을 알려드립니다. 그럼 이제부터 그 방법들에 대해서 살펴봅니다.  아래 그림은 실행결과입니다.<br></p>
+
+<p><img src="http://www.nextree.co.kr/wp-content/uploads/2014/08/jsseo-spring-ajax-20140807-03.jpg.jpg" alt="nextree"></p>
+
+<p><br></p>
+
+<h4>1. response객체에 문자열 담기</h4>
+
+<p>첫번째로 살펴볼 방법은 HttpServletResponse 객체에 문자열을 담아 보내는 방법입니다. Servlet기반인 HttpServletResponse 객체를 사용하므로 Spring MVC뿐아니라 Servlet기반의 타 프레임워크에서도 사용가능하다는 장점이 있습니다. 하지만, 단순히 문자열을 사용자가 임의로 Json형식으로 작성하는 만큼 오탈자등을 고려해야하는 번거로움이 있습니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//Script
+$(&quot;#joinOk&quot;).bind(&quot;click&quot;,function(){
+    $.ajax({
+        url : contextPath+&quot;/ajax.seo&quot;,
+        type: &quot;get&quot;,
+        data : { &quot;id&quot; : $(&quot;#id&quot;).val() },
+        success : function(responseData){
+            $(&quot;#ajax&quot;).remove();
+            var data = JSON.parse(responseData);
+            if(!data){
+                alert(&quot;존재하지 않는 ID입니다&quot;);
+                return false;
+            }
+            var html = &#39;&#39;;
+            html += &#39;&lt;form class=&quot;form-signin&quot; action=&quot;&quot; id=&quot;ajax&quot;&gt;&#39;;
+            html += &#39;이름&lt;input type=&quot;text&quot; class=&quot;form-control&quot;  name=&quot;name&quot; value=&quot;&#39;+data.name+&#39;&quot;&gt;&#39;;
+            html += &#39;아이디&lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=id&quot; value=&quot;&#39;+data.id+&#39;&quot;&gt;&#39;;
+            html += &#39;이메일&lt;input type=&quot;text&quot; class=&quot;form-control&quot;  name=&quot;email&quot; value=&quot;&#39;+data.email+&#39;&quot;&gt;&#39;;
+            html += &#39;비밀번호&lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;password&quot; value=&quot;&#39;+data.password+&#39;&quot;&gt;&#39;;
+            html += &#39;&lt;/form&gt;&#39;;
+            $(&quot;#container&quot;).after(html);
+        }
+    });
+});
+</code></pre></div>
+<p><br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//Controller
+@RequestMapping(value= &quot;/ajax.seo&quot;, method=RequestMethod.GET)
+public void AjaxView(
+        @RequestParam(&quot;id&quot;) String id,
+        HttpServletResponse response)  {
+    String personJson;
+
+    SocialPerson person = dao.getPerson(id);
+    if(person != null){
+        personJson = &quot;{\&quot;id\&quot;:\&quot;&quot;+person.getId()
+                    +&quot;\&quot;,\&quot;name\&quot;:\&quot;&quot;+person.getName()
+                    +&quot;\&quot;,\&quot;password\&quot;:\&quot;&quot;+person.getPassword()
+                    +&quot;\&quot;,\&quot;email\&quot;:\&quot;&quot;+person.getEmail()+&quot;\&quot;}&quot;;
+    }
+    else{
+        personJson = &quot;null&quot;;
+    }
+    try {
+        response.getWriter().print(personJson);
+    } catch (IOException e) {
+        e.printStackTrace();
+    }   
+}
+</code></pre></div>
+<p><br></p>
+
+<p>위 코드는 HttpServeltResponse 객체 활용에 대한 간단한 예제 코드입니다. Script코드에서 서버(Controller)에 input태그에 입력된  id값을  전송하면  Controller에서는 해당 데이터를 parameter로 받고 그 id값으로 DB를 조회합니다. 조회 성공시 개발자가 문자열을 Json형식으로 맞추어 주며, 조회 실패시 “null”이라는 문자열을 넘겨줍니다. 그리고 response객체의 getWriter메소드를 통하여 PrintWriter 객체를 가져오고 print메소드를 사용하여 Script로 해당 문자열을 전송합니다.<br>
+그렇게 되면 ajax success함수 responseData에 서버에서 넘겨준 문자열이 저장됩니다. responseData는 문자열 이므로 JSON.parse함수를 통하여 json객체로 파싱을 해준 후 구현합니다.</p>
+
+<h4>2. ObjectMapper</h4>
+
+<p>두번째로 살펴볼 방법은 ObjectMapper객체를 사용하는 방법입니다. ObjectMapper 객체를 사용하여도 HttpServletResponse 객체를 사용합니다. 하지만 ObjectMapper객체를 사용하게되면 위 방법처럼 문자열을 개발자가 작성할 필요없이 해당 객체를 Json형식의 문자열로 바꾸어주게 되어 개발자가 좀 더 간단하게 구현할 수 있습니다.<br>
+ObjectMapper 객체를 사용 하기위해서는 구현에 앞서 jackson-databind 라이브러리를 프로젝트에 추가해야 합니다. jackson-databind라이브러리를 다운받아  lib폴더에 추가 시켜주거나 Maven 프로젝트 일경우 pom.xml경우에 아래와 같이 dependency 해주면 됩니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;dependency&gt;
+    &lt;groupId&gt;com.fasterxml.jackson.core&lt;/groupId&gt;
+    &lt;artifactId&gt;jackson-databind&lt;/artifactId&gt;
+    &lt;version&gt;버전&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></div>
+<p><br></p>
+
+<p>위의 방법대로 라이브러리를 추가하시면 ObjectMapper객체를 사용할 수 있습니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//Script
+$(&quot;#joinOk&quot;).bind(&quot;click&quot;,function(){
+    $.ajax({
+        url : contextPath+&quot;/ajax.seo&quot;,
+        type: &quot;get&quot;,
+        data : { &quot;id&quot; : $(&quot;#id&quot;).val() },
+        success : function(responseData){
+            $(&quot;#ajax&quot;).remove();
+            var data = JSON.parse(responseData);
+            if(!data){
+                alert(&quot;존재하지 않는 ID입니다&quot;);
+                return false;
+            }
+            var html = &#39;&#39;;
+            html += &#39;&lt;form class=&quot;form-signin&quot; action=&quot;&quot; id=&quot;ajax&quot;&gt;&#39;;
+            html += &#39;이름&lt;input type=&quot;text&quot; class=&quot;form-control&quot;  name=&quot;name&quot; value=&quot;&#39;+data.name+&#39;&quot;&gt;&#39;;
+            html += &#39;아이디&lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=id&quot; value=&quot;&#39;+data.id+&#39;&quot;&gt;&#39;;
+            html += &#39;이메일&lt;input type=&quot;text&quot; class=&quot;form-control&quot;  name=&quot;email&quot; value=&quot;&#39;+data.email+&#39;&quot;&gt;&#39;;
+            html += &#39;비밀번호&lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;password&quot; value=&quot;&#39;+data.password+&#39;&quot;&gt;&#39;;
+            html += &#39;&lt;/form&gt;&#39;;
+            $(&quot;#container&quot;).after(html);
+        }
+    });
+});
+</code></pre></div>
+<p><br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//Controller
+@RequestMapping(value= &quot;/ajax.seo&quot;, method=RequestMethod.GET)
+public void AjaxView(
+        @RequestParam(&quot;id&quot;) String id,
+        HttpServletResponse response)  {
+    ObjectMapper mapper = new ObjectMapper();
+
+    SocialPerson person = dao.getPerson(id);
+    try {
+        response.getWriter().print(mapper.writeValueAsString(person));
+    } catch (IOException e) {
+        e.printStackTrace();
+    }   
+}
+</code></pre></div>
+<p><br></p>
+
+<p>위 코드는 ObjcetMapper객체 활용의 간단한 예제코드입니다. Script코드에서 서버(Controller)에 input태그에 입력된  id값을  전송하면  Controller에서는 해당 데이터를 parameter로 받고 그 id값으로 DB를 조회합니다. ObjcetMapper객체의 writeValueAsString메소드를 사용하여 Person객체를 Json형식의 문자열로 만듭니다. 그리고 이후에 위의 방법과 마찬가지로 response객체를 활용하여 문자열을 ajax success함수로 전송합니다. responseData는 서버에서 전송된 Json형식의 문자열 이므로 JSON.parse 함수를 통하여 Json객체로 파싱을 해준 후 구현합니다.</p>
+
+<h4>3. @ResponseBody</h4>
+
+<p>세번째로 살펴볼 방법은 ResponseBody 어노테이션을 사용하는 방법입니다. 메소드의 return형 앞에 @ResponseBody를 붙여서 사용하게되면 해당객체가 자동으로 Json객체로 변환되어 반환됩니다. 구현에 앞서 @ResponseBody 환경을 설정하는 방법을 알아봅니다.</p>
+
+<p>첫째, jackson-mapper-asl 라이브러리를 다운로드하여 lib폴더에 추가시켜주거나  Maven 프로젝트 일경우 pom.xml경우에 아래와 같이 dependency 해주면 됩니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;dependency&gt;
+       &lt;groupId&gt;org.codehaus.jackson&lt;/groupId&gt;
+       &lt;artifactId&gt;jackson-mapper-asl&lt;/artifactId&gt;
+       &lt;version&gt;버전&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></div>
+<p><br></p>
+
+<p>둘째, servlet xml에 아래와 같이 어노테이션을 설정해줍니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;annotation-driven /&gt;
+</code></pre></div>
+<p><br></p>
+
+<p>위에서 @ResponseBody방식을 사용하 기 위한 환경 설정법에 대해서 알아보았습니다.  아래는 @ResponseBody방식의 실제 Script와 Java Controller 구현 코드입니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//Script
+$(&quot;#joinOk&quot;).bind(&quot;click&quot;,function(){
+        $.ajax({
+            url : contextPath+&quot;/ajax.seo&quot;,
+            type: &quot;get&quot;,
+            data : { &quot;id&quot; : $(&quot;#id&quot;).val() },
+            success : function(data){
+                $(&quot;#ajax&quot;).remove();
+                alert(data);
+                if(!data){
+                    alert(&quot;존재하지 않는 ID입니다&quot;);
+                    return false;
+                }
+                var html = &#39;&#39;;
+                html += &#39;&lt;form class=&quot;form-signin&quot; action=&quot;&quot; id=&quot;ajax&quot;&gt;&#39;;
+                html += &#39;이름&lt;input type=&quot;text&quot; class=&quot;form-control&quot;  name=&quot;name&quot; value=&quot;&#39;+data.name+&#39;&quot;&gt;&#39;;
+                html += &#39;아이디&lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=id&quot; value=&quot;&#39;+data.id+&#39;&quot;&gt;&#39;;
+                html += &#39;이메일&lt;input type=&quot;text&quot; class=&quot;form-control&quot;  name=&quot;email&quot; value=&quot;&#39;+data.email+&#39;&quot;&gt;&#39;;
+                html += &#39;비밀번호&lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;password&quot; value=&quot;&#39;+data.password+&#39;&quot;&gt;&#39;;
+                html += &#39;&lt;/form&gt;&#39;;
+                $(&quot;#container&quot;).after(html);
+            }
+        });
+
+    });
+</code></pre></div>
+<p><br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//Controller
+@RequestMapping(value= &quot;/ajax.seo&quot;, method=RequestMethod.GET)
+public @ResponseBody SocialPerson AjaxView(
+        @RequestParam(&quot;id&quot;) String id)  {
+
+    SocialPerson person = dao.getPerson(id);
+    return person;
+}
+</code></pre></div>
+<p><br>위 코드는 @ResponseBody방식에 대한 간단한 예제 코드입니다. Script코드에서 서버(Controller)에 input태그에 입력된  id값을  전송하면  Controller에서는 해당 데이터를 parameter로 받고 그 id값으로 DB를 조회합니다.  앞서 말하였듯 return형 앞에 @ResponseBody를 사용하고 해당 객체를 return해주기만 하면 ajax success함수의 data에 person객체가 Json객체로 변환 후 전송되어 파싱이 필요없습니다..</p>
+
+<h4>4. jsonView</h4>
+
+<p>마지막으로 살펴볼 방법은 jsonView를 사용 하는 방법입니다. 구현에 앞서 환경 설정을 해주어야 하는데, 설정방법은 다음과 같습니다.</p>
+
+<p>첫째, json-lib-ext-spring 라이브러리를 다운받아 lib 폴더에 추가 시켜주거나 Maven 프로젝트 일경우 pom.xml경우에 아래와 같이 dependency 해주면 됩니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;dependency&gt;
+    &lt;groupId&gt;net.sf.json-lib&lt;/groupId&gt;
+    &lt;artifactId&gt;json-lib-ext-spring&lt;/artifactId&gt;
+    &lt;version&gt;버전&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre></div>
+<p><br></p>
+
+<p>둘째, servlet xml에 아래와 같이  bean객체를 설정 후 viewResolver를 설정 해줍니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&lt;beans:bean id=&quot;jsonView&quot; class=&quot;net.sf.json.spring.web.servlet.view.JsonView&quot;/&gt; 
+&lt;beans:bean id=&quot;viewResolver&quot; class=&quot;org.springframework.web.servlet.view.BeanNameViewResolver&quot;&gt;
+    &lt;beans:property name=&quot;order&quot; value=&quot;1&quot;&gt;&lt;/beans:property&gt;
+&lt;/beans:bean&gt;
+</code></pre></div>
+<p><br></p>
+
+<p>위에서 jsonView방식을 사용하 기 위한 환경 설정법에 대해서 알아보았습니다.  아래는 jsonView방식의 실제 Script*와* Java Controller 구현 코드입니다.<br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">// Script
+$(&quot;#joinOk&quot;).bind(&quot;click&quot;,function(){
+        $.ajax({
+            url : contextPath+&quot;/ajax.seo&quot;,
+            type: &quot;get&quot;,
+            data : { &quot;id&quot; : $(&quot;#id&quot;).val() },
+            success : function(responseData){
+                var data = responseData.person;
+                $(&quot;#ajax&quot;).remove();
+                if(!data){
+                    alert(&quot;존재하지 않는 ID입니다&quot;);
+                    return false;
+                }
+                var html = &#39;&#39;;
+                html += &#39;&lt;form class=&quot;form-signin&quot; action=&quot;&quot; id=&quot;ajax&quot;&gt;&#39;;
+                html += &#39;이름&lt;input type=&quot;text&quot; class=&quot;form-control&quot;  name=&quot;name&quot; value=&quot;&#39;+data.name+&#39;&quot;&gt;&#39;;
+                html += &#39;아이디&lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=id&quot; value=&quot;&#39;+data.id+&#39;&quot;&gt;&#39;;
+                html += &#39;이메일&lt;input type=&quot;text&quot; class=&quot;form-control&quot;  name=&quot;email&quot; value=&quot;&#39;+data.email+&#39;&quot;&gt;&#39;;
+                html += &#39;비밀번호&lt;input type=&quot;text&quot; class=&quot;form-control&quot; name=&quot;password&quot; value=&quot;&#39;+data.password+&#39;&quot;&gt;&#39;;
+                html += &#39;&lt;/form&gt;&#39;;
+                $(&quot;#container&quot;).after(html);
+            }
+        });
+
+    });
+</code></pre></div>
+<p><br></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">//Controller
+@RequestMapping(value= &quot;/ajax.seo&quot;, method=RequestMethod.GET)
+public ModelAndView AjaxView( @RequestParam(&quot;id&quot;) String id)  {
+    ModelAndView mav= new ModelAndView();
+
+    SocialPerson person = dao.getPerson(id);
+    mav.addObject(&quot;person&quot;,person);
+    mav.setViewName(&quot;jsonView&quot;);
+    return mav;
+}
+</code></pre></div>
+<p><br></p>
+
+<p>위 코드는 jsonView방식에 대한 간단한 예제 코드입니다. Script코드에서 서버(Controller)에 input태그에 입력된  id값을  전송하면  Controller에서는 해당 데이터를 parameter로 받고 그 id값으로 DB를 조회합니다. 조회결과가 있으면 해당 회원(Person) 객체를 ModelandView객체에 addObject메소드를 사용하여 넣어주고, 조회결과가 없으면 null이 됩니다. 그리고 마지막으로 view명을 “jsonView”로 하면 ajax success함수 responseData에  ModelandView 객체가 Json객체로 파싱되어서 넘어옵니다. 즉, ModelandView 객체에 맵 형식(키,밸류)으로 Person객체를 입력하였으므로 responseData가 아닌 responseData.person이 Person객체가 됩니다. 넘어온 Person 객체는 json형식이기 때문에 속성 값은 data.id, data.name 등으로 구현이 됩니다.</p>
+
+<h4>마치며</h4>
+
+<p>지금까지 Spring MVC에서 data를 Json형식으로 변환하는 방법에 대해 알아보았습니다. 구현에는 정답이 없다고 생각합니다. 한 가지 결과에 도달하기에는 무수히 많은 길들과 방법들이 존재하는 것 같습니다. 제가 알고있는 정보들을 공유하며 모든분들께 도움이 될 수 없겠지만 몇몇분들께는 도움이 되었으면 좋겠습니다. 부족한 글 봐주셔서 감사합니다.</p>
+
+<h4>참고사이트</h4>
+
+<p><a href="http://hmkcode.com/java-servlet-send-receive-json-using-jquery-ajax/">http://hmkcode.com/java-servlet-send-receive-json-using-jquery-ajax/</a> - ObjectMapper</p>
+
+<p><a href="http://hmkcode.com/spring-mvc-json-json-to-java/">http://hmkcode.com/spring-mvc-json-json-to-java/</a>  – @ResponseBody</p>
+
+<p><a href="http://a07274.tistory.com/209">http://a07274.tistory.com/209</a> - jsonView</p>
+
+  </div>
+
+  <div class="date">
+    Written on August 10, 2014
+  </div>
+  
+  <br>
+
+  <div>
+    <ul class="tags post-tags cf">
+      <li>Tagged:</li>
+      
+      <li><a href="/search/?tags=Spring MVC Ajax JSON">spring mvc ajax json</a></li>
+      
+    </ul>
+  </div>
+  <br>
+
+  
+</article>
+
+<!-- responsive video js -->
+<script src="/js/fluidvids.js"></script>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          <p>Nextree Consulting CO., LTD</p>
+                    
+          
+          
+          
+          <a href="http://github.com/wooseok7/theme20"><svg width="40px" height="40px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <path d="M0.336871032,30 C0.336871032,13.4314567 13.5672313,0 29.8877097,0 C46.208188,0 59.4385483,13.4314567 59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C13.5672313,60 0.336871032,46.5685433 0.336871032,30 Z M0.336871032,30" id="Github" fill="#333333" sketch:type="MSShapeGroup"></path>
+    <path d="M18.2184245,31.9355566 C19.6068506,34.4507902 22.2845295,36.0156764 26.8007287,36.4485173 C26.1561023,36.9365335 25.3817877,37.8630984 25.2749857,38.9342607 C24.4644348,39.4574749 22.8347506,39.62966 21.5674303,39.2310659 C19.7918469,38.6717023 19.1119377,35.1642642 16.4533306,35.6636959 C15.8773626,35.772144 15.9917933,36.1507609 16.489567,36.4722998 C17.3001179,36.9955141 18.0629894,37.6500075 18.6513541,39.04366 C19.1033554,40.113871 20.0531304,42.0259813 23.0569369,42.0259813 C24.2489236,42.0259813 25.0842679,41.8832865 25.0842679,41.8832865 C25.0842679,41.8832865 25.107154,44.6144649 25.107154,45.6761142 C25.107154,46.9004355 23.4507693,47.2457569 23.4507693,47.8346108 C23.4507693,48.067679 23.9990832,48.0895588 24.4396415,48.0895588 C25.3102685,48.0895588 27.1220883,47.3646693 27.1220883,46.0918317 C27.1220883,45.0806012 27.1382993,41.6806599 27.1382993,41.0860982 C27.1382993,39.785673 27.8372803,39.3737607 27.8372803,39.3737607 C27.8372803,39.3737607 27.924057,46.3153869 27.6704022,47.2457569 C27.3728823,48.3397504 26.8360115,48.1846887 26.8360115,48.6727049 C26.8360115,49.3985458 29.0168704,48.8505978 29.7396911,47.2571725 C30.2984945,46.0166791 30.0543756,39.2072834 30.0543756,39.2072834 L30.650369,39.1949165 C30.650369,39.1949165 30.6837446,42.3123222 30.6637192,43.7373675 C30.6427402,45.2128317 30.5426134,47.0792797 31.4208692,47.9592309 C31.9977907,48.5376205 33.868733,49.5526562 33.868733,48.62514 C33.868733,48.0857536 32.8436245,47.6424485 32.8436245,46.1831564 L32.8436245,39.4688905 C33.6618042,39.4688905 33.5387911,41.6768547 33.5387911,41.6768547 L33.5988673,45.7788544 C33.5988673,45.7788544 33.4186389,47.2733446 35.2190156,47.8992991 C35.8541061,48.1209517 37.2139245,48.1808835 37.277815,47.8089257 C37.3417055,47.4360167 35.6405021,46.8814096 35.6252446,45.7236791 C35.6157088,45.0178155 35.6567131,44.6059032 35.6567131,41.5379651 C35.6567131,38.470027 35.2438089,37.336079 33.8048426,36.4323453 C38.2457082,35.9766732 40.9939527,34.880682 42.3337458,31.9450695 C42.4383619,31.9484966 42.8791491,30.5737742 42.8219835,30.5742482 C43.1223642,29.4659853 43.2844744,28.1550957 43.3168964,26.6025764 C43.3092677,22.3930799 41.2895654,20.9042975 40.9014546,20.205093 C41.4736082,17.0182425 40.8060956,15.5675121 40.4961791,15.0699829 C39.3518719,14.6637784 36.5149435,16.1145088 34.9653608,17.1371548 C32.438349,16.3998984 27.0982486,16.4712458 25.0957109,17.3274146 C21.4005522,14.6875608 19.445694,15.0918628 19.445694,15.0918628 C19.445694,15.0918628 18.1821881,17.351197 19.1119377,20.6569598 C17.8961113,22.2028201 16.9902014,23.2968136 16.9902014,26.1963718 C16.9902014,27.8297516 17.1828264,29.2918976 17.6176632,30.5685404 C17.5643577,30.5684093 18.2008493,31.9359777 18.2184245,31.9355566 Z M18.2184245,31.9355566" id="Path" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+    <path d="M59.4385483,30 C59.4385483,46.5685433 46.208188,60 29.8877097,60 C23.8348308,60 18.2069954,58.1525134 13.5216148,54.9827754 L47.3818361,5.81941103 C54.6937341,11.2806503 59.4385483,20.0777973 59.4385483,30 Z M59.4385483,30" id="reflec" fill-opacity="0.08" fill="#000000" sketch:type="MSShapeGroup"></path>
+</svg></a>
+          
+          
+          
+          
+          
+          
+
+        </footer>
+      </div>
+    </div>
+
+    
+
+  </body>
+</html>

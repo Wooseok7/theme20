@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+This home blog contains many real cool & outstanding stories of service for SW training. 
+
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself. 
+Namoosori can convince you why you are here. 
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[admin@nextree.co.kr](mailto:admin@nextree.co.kr)
