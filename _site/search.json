@@ -1,0 +1,28 @@
+[
+  
+    {
+  "title"    : "Embed YouTube video responsively test",
+  "tags"     : ["embed","youtube","responsive","jekyll","plugin", null],
+  "href"     : "/embed-video-responsively/",
+  "date"     : {
+    "day"   : "24",
+    "month" : "12",
+    "year"  : "2014"
+  }
+}
+,
+  
+    {
+  "title"    : "You're up and running!",
+  "tags"     : ["first","blog","post","jekyll","test", null],
+  "href"     : "/Hello-World/",
+  "date"     : {
+    "day"   : "03",
+    "month" : "03",
+    "year"  : "2014"
+  }
+}
+,
+  
+  null
+]
