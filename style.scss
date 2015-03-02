@@ -151,8 +151,8 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  padding: 8px 0;
+  border-bottom: 7px solid #1E821E;
 
   
   @include mobile {
@@ -269,11 +269,12 @@ nav {
   }
 }
 
+
 .wrapper-footer {
-  margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: #1E821E;
+  margin-top: 40px ; 
+  border-top: 10px ;
+  border-bottom: 1px solid $white;
+  background-color: none;
 }
 
 /*Tag from https://alexpearce.me*/
@@ -321,9 +322,10 @@ nav {
 }
 
 footer {
-  padding: 20px 1;
+  padding: 20px 1 ;
   text-align: center;
-}
+  border-top: 7px solid #1E821E;
+} 
 
 /*****************************************************************************/
 /*
@@ -339,7 +341,7 @@ footer {
 .tag-icon-image
 {
 display:block;
-background-image:url('/images/tagicon.png');
+background-image:url('/images/Nextree.png');
 background-size: 13px;
 background-repeat: no-repeat;
 background-position: left center;
